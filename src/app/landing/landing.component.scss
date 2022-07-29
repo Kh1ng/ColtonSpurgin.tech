@@ -1,0 +1,23 @@
+/*Background*/  
+.bg {
+    background-image: url('../../assets/143279-computer-science-wallpaper-1920x1080-mobile.jpg');
+    background-color: black;
+    background-size: fill;
+    background-repeat:repeat;
+}
+
+/*Background boxes for text*/
+.bio  {
+    border-radius: 2%;
+    margin: 1%;
+    padding: 1%;
+    background-color: rgba(14, 3, 105, .8);
+}
+
+/*Text*/
+.bio p {
+    color: rgb(252, 75, 5);
+    font-size: medium; 
+    opacity: 1;   
+}
+
