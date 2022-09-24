@@ -12,6 +12,7 @@ import { AirForceComponent } from './air-force/air-force.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GhactivityComponent } from './ghactivity/ghactivity.component';
+import { TerminalComponent } from './terminal/terminal.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { GhactivityComponent } from './ghactivity/ghactivity.component';
     LandingComponent,
     AirForceComponent,
     PageNotFoundComponent,
-    GhactivityComponent
+    GhactivityComponent,
+    TerminalComponent
   ],
   imports: [
     BrowserModule,
