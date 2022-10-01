@@ -1,12 +1,22 @@
-mat-toolbar {
+.c1 {
     flex: 1 1 auto; 
-    color: #009688;
+    background-color: #336b87;
+    
+    //color: #336b87; old
 }
 
 .small-spacer {
-    flex: 1 1 auto;
-  }
-
-  .menu-entry {
     flex: .5 .5 auto;
   }
+
+.big-spacer {
+  flex: 10 10 auto;
+}
+
+.menu-entry {
+   flex: .5 .5 auto;
+   background-color: #336b87;
+   color:azure;
+}
+
+      // color: #336b87; //old

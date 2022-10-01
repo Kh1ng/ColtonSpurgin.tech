@@ -1,21 +1,16 @@
+<!-- This is not working... HTML in app.component.html-->
+<!-- https://github.com/caseyscarborough/github-activity -->
+
 <body>
-      <!--github activity-->
-  <link rel="stylesheet" href="node_modules/octicons/build/font/octicons.css">
-  <link rel="stylesheet" href="node_modules/github-activity-feed/dist/github-activity.min.css">
-  <script type="text/javascript" src="mustache"></script>
-  <script type="text/javascript" src="ghactivity"></script>
-  <link rel="stylesheet" href="node_modules/github-activity-feed/dist/github-activity.dark.min.css">
   <script>
-  GitHubActivity.feed({
-    username: "Kh1ng",
-    selector: "#feed",
-    limit: 20, // optional
-  });
-</script>
-<noscript>
+    GitHubActivity.feed({
+      username: "Kh1ng",
+      selector: "#feed",
+      limit: 20, // optional
+    });
+  </script>
+  <noscript>
     Javascript didn't load correctly.
-</noscript>  
-  <div id="feed">
-    
-  </div>
+  </noscript>  
+  <div id="feed"></div>
 </body>

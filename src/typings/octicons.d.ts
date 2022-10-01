@@ -1,1 +1,1 @@
-declare module 'octicons';
+// declare module 'octicons';

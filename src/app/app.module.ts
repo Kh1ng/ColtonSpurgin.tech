@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatIconModule } from '@angular/material/icon'; 
+import { MatIconModule } from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button'; 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,9 +16,9 @@ import { GhactivityComponent } from './ghactivity/ghactivity.component';
 import { TerminalComponent } from './terminal/terminal.component';
 
 //GH activity
-import * as ghactivity from 'node_modules/github-activity-feed';
-import * as octicons from 'octicons';
-import * as mustache from 'mustache';
+// import * as ghactivity from 'github-activity-feed';
+// import * as octicons from 'octicons';
+// import * as mustache from 'mustache';
 
 
 @NgModule({
@@ -37,9 +38,10 @@ import * as mustache from 'mustache';
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
-    ghactivity,
-    octicons,
-    mustache
+    MatButtonModule
+    // ghactivity,
+    // octicons,
+    // mustache
   ],
   providers: [],
   bootstrap: [AppComponent]

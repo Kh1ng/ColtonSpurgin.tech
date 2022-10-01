@@ -1,1 +1,1 @@
-declare module 'node_modules/github-activity-feed';
+// declare module 'node_modules/github-activity-feed';
