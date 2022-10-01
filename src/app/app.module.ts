@@ -14,6 +14,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GhactivityComponent } from './ghactivity/ghactivity.component';
 import { TerminalComponent } from './terminal/terminal.component';
 
+//GH activity
+import * as ghactivity from 'node_modules/github-activity-feed';
+import * as octicons from 'octicons';
+import * as mustache from 'mustache';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +36,10 @@ import { TerminalComponent } from './terminal/terminal.component';
     BrowserAnimationsModule,
     FlexLayoutModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    ghactivity,
+    octicons,
+    mustache
   ],
   providers: [],
   bootstrap: [AppComponent]
