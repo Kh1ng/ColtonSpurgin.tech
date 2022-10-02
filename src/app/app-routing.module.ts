@@ -13,7 +13,7 @@ import { SocialsComponent } from './socials/socials/socials.component';
 const routes: Routes = [
   { path: 'landing-component', component: LandingComponent },
   { path: '', redirectTo: 'landing-component', pathMatch: 'full' },
-  { path: 'AirForce-component', component: AirForceComponent },
+  { path: 'AirForce', component: AirForceComponent },
   { path: 'GHActivityComponent', component: GhactivityComponent },
   { path: 'socials', component: SocialsComponent},
   { path: 'term', component: TerminalComponent},
