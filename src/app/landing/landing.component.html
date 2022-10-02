@@ -1,19 +1,7 @@
-<body class="c2 big1">
-    <div class="container big2">
+<body class="c2">
+    <div class="container">
         <div class="row">
-            <div class="col-sm-1">
-            </div>
-            <div class="col bio">
-                    <div>
-                        <img src="assets/Blues Headshot.jpg" class="me" alt="Me">
-                    </div>
-                    <p>    
-                &emsp; Hello and welcome to my online portfolio, I have various school assignments, personal projects and some information about me and my
-                work experience. I am currently a computer science student at The University of West Florida and active duty in the Air Force until 2025. 
-                Due to my service commitment I am interested in part work or remote internships. Please browse whatever you'd like and contact me with any questions.
-                </p>
-            </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2 left rounded">
                 <h2>Technical Skills</h2>
                 <ul>
                     <li> Java </li>
@@ -23,12 +11,39 @@
                     <li> Javascript </li>
                     <li> Angular & Spring Boot Frameworks </li>
                 </ul>
-                <h2> Education </h2>
-                <h4>University of West Florida</h4>
-                <ul>
-                    <li>Bachelor's of Science in Computer Science (2019 - Present)</li>
+                <div class="p-4"></div>
+                <ul class="links">
+                    <a href="https://www.linkedin.com/in/coltonspurgin"> <img src="assets/LinkedIn-Blue-96@2x.png" class="img-fluid links" ></a>
+                    <a href="https://github.com/Kh1ng"> <img src="assets/GitHub_Logo_White.png" class="img-fluid links"> </a>
                 </ul>
+            </div>
+            <div class="col-lg bio rounded" style="float:none">
+                 
+                    <figure class="float-start figure w-25  p-2">
+                        <img src="assets/Blues Headshot.jpg" class="me img-fluid" alt="Me">
+                    </figure>
+                <p class="intro">       
+                &emsp; Hello and welcome to my online portfolio. Please feel free to look around. I am a Junior at The University of West Florida studying Computer Science.
+                I have incorperated some of my school projects in the <a routerLink="../AirForce-component">terminal</a> page. Please have a look.
+                </p>
+
+               
+            </div>
+            <div class="col-sm-3 right rounded">              
+                <h2> Education </h2>
+                <mat-divider></mat-divider>
+                <ul>
+                    <li><h4>University of West Florida</h4>
+                        <ul>
+                            <li> Bachelors of Science: Computer Science</li>
+                            <li> Expected graduation: 2024 </li>
+                            <li> UWF Association of Computing Machinery: Member</li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="p-4"></div>
                 <h2> Work Experience </h2>
+                <mat-divider></mat-divider>
                 <ul>
                     <li>U.S. Air Force - Aerospace Medical Technician</li>
                     <li>CareFlite - EMT</li>
@@ -36,10 +51,6 @@
                     <li>Guardian EMS - EMT</li>
                     <li>Melissa Fire Dept. - Driver/Operator/Engineer</li>
                     <li>CVS Pharmacy - Shift Supervisor</li>
-                </ul>
-                <ul class="links">
-                    <a href="https://www.linkedin.com/in/coltonspurgin"> <img src="assets/LinkedIn-Blue-96@2x.png" class="img-fluid links" ></a>
-                    <a href="https://github.com/Kh1ng"> <img src="assets/GitHub_Logo_White.png" class="img-fluid links"> </a>
                 </ul>
             </div>
         </div>

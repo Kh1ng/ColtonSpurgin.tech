@@ -4,7 +4,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button'; 
+import { MatButtonModule } from '@angular/material/button'; 
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatDividerModule } from '@angular/material/divider'; 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -14,6 +16,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GhactivityComponent } from './ghactivity/ghactivity.component';
 import { TerminalComponent } from './terminal/terminal.component';
+import { SocialsComponent } from './socials/socials/socials.component';
 
 //GH activity
 // import * as ghactivity from 'github-activity-feed';
@@ -29,7 +32,8 @@ import { TerminalComponent } from './terminal/terminal.component';
     AirForceComponent,
     PageNotFoundComponent,
     GhactivityComponent,
-    TerminalComponent
+    TerminalComponent,
+    SocialsComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +42,9 @@ import { TerminalComponent } from './terminal/terminal.component';
     FlexLayoutModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatGridListModule,
+    MatDividerModule
     // ghactivity,
     // octicons,
     // mustache

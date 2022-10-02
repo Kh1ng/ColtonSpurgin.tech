@@ -8,37 +8,26 @@
 
 /*Background boxes for text*/
 .bio  {
-    border-radius: 2%;
-    margin: 1%;
-    padding: 1%;
+    margin: .5%;
     background-color: #90afc5;
 }
 
 /*Text*/
 .bio p {
-    
-    border-radius: 2%;
-    padding: .5%; 
+    padding: 2%; 
 }
 
 .me {
     border-radius: 50%;
-    max-width: 75%;
-    height: auto;
 }
 
 .left {
+    margin: .5%;
     background-color: #90afc5;
-    border-radius: 2%;
     padding: .5%;
 }
 
-.big1 {
-    padding: 1%;
-    background-color: #212529;
-}
-
-.big2 {
+body {
     padding: 1%;
     background-color: #212529;
 }
@@ -56,7 +45,19 @@
 }
 
 .right {
+    margin: .5%;
     background-color: #90afc5;
-    border-radius: 2%;
     padding: .5%;
+}
+
+.intro {
+    padding-left: 5%;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
 }

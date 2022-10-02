@@ -7,6 +7,7 @@ import { TerminalComponent } from './terminal/terminal.component';
 import { HeaderComponent } from './header/header.component';
 import { GhactivityComponent } from './ghactivity/ghactivity.component';
 import { from } from 'rxjs';
+import { SocialsComponent } from './socials/socials/socials.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'landing-component', pathMatch: 'full' },
   { path: 'AirForce-component', component: AirForceComponent },
   { path: 'GHActivityComponent', component: GhactivityComponent },
+  { path: 'socials', component: SocialsComponent},
   { path: 'term', component: TerminalComponent},
   { path: '**', component: PageNotFoundComponent},
 ];
