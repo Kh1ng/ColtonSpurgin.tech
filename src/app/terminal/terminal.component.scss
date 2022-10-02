@@ -12,10 +12,15 @@
     min-width: fit-content;
 }
 
-.cli{
+.cli {
     max-height: min-content;
 }
 
 body {
     background-color: rgba(174, 202, 202, 0.842);
+}
+
+.info {
+    padding: 1%;
+    background-color: #90afc5;
 }

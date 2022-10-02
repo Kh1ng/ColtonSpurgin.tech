@@ -1,6 +1,6 @@
 /*Background*/  
 .bg {
-    background-image: url('../../assets/143279-computer-science-wallpaper-1920x1080-mobile.jpg');
+
     background-color: black;
     background-size: fill;
     background-repeat:repeat;
@@ -11,18 +11,20 @@
     border-radius: 2%;
     margin: 1%;
     padding: 1%;
-    background-color: rgba(14, 3, 105, .8);
+    background-color: #90afc5;
 }
 
 /*Text*/
 .bio p {
-    color: rgb(252, 75, 5);
-    font-size: medium; 
-    opacity: 1;   
+    
+    border-radius: 2%;
+    padding: .5%; 
 }
 
 .me {
     border-radius: 50%;
+    max-width: 75%;
+    height: auto;
 }
 
 .left {
@@ -51,4 +53,10 @@
 
 .small-spacer {
     flex: 1 1 auto;
+}
+
+.right {
+    background-color: #90afc5;
+    border-radius: 2%;
+    padding: .5%;
 }
