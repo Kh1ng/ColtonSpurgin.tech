@@ -6,9 +6,9 @@ import { AirForceComponent  } from './air-force/air-force.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { HeaderComponent } from './header/header.component';
 import { GhactivityComponent } from './ghactivity/ghactivity.component';
-import { from } from 'rxjs';
+import { HomeLabComponent } from './home-lab/home-lab.component';
 import { SocialsComponent } from './socials/socials/socials.component';
-
+// import { from } from 'rxjs';
 
 const routes: Routes = [
   { path: 'landing-component', component: LandingComponent },
@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'GHActivityComponent', component: GhactivityComponent },
   { path: 'socials', component: SocialsComponent},
   { path: 'term', component: TerminalComponent},
+  { path: 'HomeLab', component: HomeLabComponent},
   { path: '**', component: PageNotFoundComponent},
 ];
 

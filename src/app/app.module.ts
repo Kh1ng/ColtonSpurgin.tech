@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { GhactivityComponent } from './ghactivity/ghactivity.component';
 import { TerminalComponent } from './terminal/terminal.component';
 import { SocialsComponent } from './socials/socials/socials.component';
+import { HomeLabComponent } from './home-lab/home-lab.component';
 
 //GH activity
 // import * as ghactivity from 'github-activity-feed';
@@ -33,7 +34,8 @@ import { SocialsComponent } from './socials/socials/socials.component';
     PageNotFoundComponent,
     GhactivityComponent,
     TerminalComponent,
-    SocialsComponent
+    SocialsComponent,
+    HomeLabComponent
   ],
   imports: [
     BrowserModule,

@@ -29,9 +29,11 @@
             ],
             "styles": [
               "src/styles.scss"
+
             ],
             "scripts": [
-              
+              "node_modules/mustache/mustache.min.js",
+              "node_modules/github-activity-feed/dist/github-activity.min.js"
             ]
           },
           "configurations": {
