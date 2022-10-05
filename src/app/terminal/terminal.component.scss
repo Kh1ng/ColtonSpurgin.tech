@@ -13,14 +13,26 @@
 }
 
 .cli {
-    max-height: min-content;
+    flex-direction: column;
 }
 
 body {
-    background-color: rgba(174, 202, 202, 0.842);
+    // background-color: rgba(174, 202, 202, 0.842);
+    padding: 2%;
 }
 
 .info {
     padding: 1%;
     background-color: #90afc5;
+}
+
+.in {
+    background-color: rgb(9, 12, 33);
+    color: rgb(222, 222, 222);
+    border: 0;
+    min-width: max-content;
+}
+
+.type {
+    
 }

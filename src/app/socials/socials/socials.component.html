@@ -1,6 +1,6 @@
-<p>testing matgrid</p>
-
-<mat-grid-list cols="4" rowHeight="100px">
+<body>
+  <p>testing matgrid</p>
+  <mat-grid-list cols="4" rowHeight="100px">
     <mat-grid-tile
         *ngFor="let tile of tiles"
         [colspan]="tile.cols"
@@ -9,4 +9,4 @@
       {{tile.content}}
     </mat-grid-tile>
   </mat-grid-list>
-  
+</body>

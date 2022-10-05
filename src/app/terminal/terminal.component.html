@@ -1,9 +1,9 @@
 <body>
     <div style="text-align: center"><h1>This will be a (fake) terminal one day</h1> </div>
-    <div class="container">
+    <div class="container-fluid p-5">
         <div class="row">  
 
-                <div class="term col container-fluid">
+                <div class="term col rounded border container-fluid ">
                     <div class="out">
                         <pre>
                                                                 ~~~ I use Arch btw ~~~ 
@@ -31,11 +31,22 @@
                         </pre>
                 </div>
                 <div class="container-fluid border-top cli">
-                    [root@ColtonSpurgin.tech]$  <!--<form><input type="text" id="cmd" value="[]"></form>-->
+                    <div class="row">
+                        <div class="col-sm">    
+                            [root@ColtonSpurgin.tech]$  
+                        </div>
+                        <div class="col float-start">
+                            <form><input class="in container-fluid" type="text" id="cmd" value="[]"></form>
+                        </div>
+                    </div>
                 </div>
             </div>
-                <div class="col info p-2">
-                    Built in Angular and communicates with spring boot using RESTful API. Showcases school projects written in Java. Themed off my 
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col info rounded border p-2">
+                    <h4>Soon(tm.)</h4>
+                    Built in Angular and Spring Boot, front end communicates to a RESTful API in Java. Showcases school projects written in Java. Themed off my 
                     <a href="https://xerolinux.xyz/">XeroLinux</a> terminal.
             </div>
         </div>  
