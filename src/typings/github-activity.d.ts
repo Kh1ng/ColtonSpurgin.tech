@@ -1,1 +1,1 @@
-declare module 'node_modules/github-activity-feed/dist/github-activity.min.js';
+declare module 'github-activity-feed';
