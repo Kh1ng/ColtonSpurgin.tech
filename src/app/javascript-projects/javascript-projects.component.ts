@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JavascriptProjectsComponent implements OnInit {
 
-  constructor() { }
+  projects = new Array();
+
+  constructor() {
+
+  }
 
   ngOnInit(): void {
   }

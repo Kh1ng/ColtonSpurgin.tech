@@ -8,9 +8,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSelectModule } from '@angular/material/select'
+
+//github activity
 import { Octicons } from '@primer/octicons';
 import { mustache } from 'mustache';
-import { githubactiviry } from 'github-activity-feed';
+import { githubactivity } from 'github-activity-feed';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -51,8 +54,10 @@ import { JavascriptProjectsComponent } from './javascript-projects/javascript-pr
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
-    MatDividerModule
-    // ghactivity,
+    MatDividerModule,
+    MatSelectModule
+
+    // githubhactivity,
     // octicons,
     // mustache
   ],

@@ -1,7 +1,5 @@
 import { Component, NgModule, OnInit } from '@angular/core';
-// import * as githubfeed from 'github-activity-feed';
-// import * as octicons from '@primer/octicons';
-// import * as mustache from 'mustache';
+import * as githubfeed from 'github-activity-feed';
 
 @Component({
   selector: 'app-ghactivity',
@@ -12,18 +10,18 @@ import { Component, NgModule, OnInit } from '@angular/core';
 export class GhactivityComponent implements OnInit {
 
   constructor() {
-
+    //   let ghf = new githubfeed();
+    //   ghf.feed({
+    //     username: "Kh1ng",
+    //     selector: "#feed",
+    //     limit: 20, // optional
+    //   });
   }
 
   ngOnInit(): void {
 
   }
-}
 
-// export module feed {
-//   githubfeed.feed({
-//     username: "Kh1ng",
-//     selector: "#feed",
-//     limit: 20, // optional
-//   });
-// }
+
+
+}
