@@ -10,12 +10,8 @@ import * as githubfeed from 'github-activity-feed';
 export class GhactivityComponent implements OnInit {
 
   constructor() {
-    //   let ghf = new githubfeed();
-    //   ghf.feed({
-    //     username: "Kh1ng",
-    //     selector: "#feed",
-    //     limit: 20, // optional
-    //   });
+
+
   }
 
   ngOnInit(): void {

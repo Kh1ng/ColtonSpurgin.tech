@@ -27,7 +27,7 @@ import { HomeLabComponent } from './home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './javascript-projects/javascript-projects.component';
 
 //GH activity
-// import * as ghactivity from 'github-activity-feed';
+// import * as githubactivityfeed from 'github-activity-feed';
 // import * as octicons from 'octicons';
 // import * as mustache from 'mustache';
 
@@ -55,9 +55,8 @@ import { JavascriptProjectsComponent } from './javascript-projects/javascript-pr
     MatButtonModule,
     MatGridListModule,
     MatDividerModule,
-    MatSelectModule
-
-    // githubhactivity,
+    MatSelectModule,
+    // githubactivityfeed
     // octicons,
     // mustache
   ],
