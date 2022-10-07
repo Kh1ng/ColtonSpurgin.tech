@@ -7,19 +7,17 @@
         <mat-form-field appearance="fill">
             <mat-label>Project</mat-label>
             <mat-select>
-                <mat-option *ngFor="let project of this.projects" [value]="project.value">
-                    {{project.viewValue}}
+                <mat-option *ngFor="let selection of getProjects()" [value]="selection.value">
+                    {{selection.viewValue}}
                 </mat-option>
             </mat-select>
         </mat-form-field>
     </div>
 
     <div class="theStuff container-fluid">
-        Put the stuff here.
+        {{currProj.getStuff()}}
     </div>
     <div class="container-fluid theNotes">
-        Put the project info and how i did it here.
-
-        Need project selector, tranfer JS to ang
+        {{currProj.getNotes()}}
     </div>
 </body>
