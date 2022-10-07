@@ -9,12 +9,14 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select'
+import { EMPTY } from 'rxjs'
 
 //github activity
 import { Octicons } from '@primer/octicons';
 import { mustache } from 'mustache';
 import { githubactivity } from 'github-activity-feed';
 
+//components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { LandingComponent } from './landing/landing.component';
@@ -26,10 +28,6 @@ import { SocialsComponent } from './socials/socials/socials.component';
 import { HomeLabComponent } from './home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './javascript-projects/javascript-projects.component';
 
-//GH activity
-// import * as githubactivityfeed from 'github-activity-feed';
-// import * as octicons from 'octicons';
-// import * as mustache from 'mustache';
 
 
 @NgModule({
