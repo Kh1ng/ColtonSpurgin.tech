@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms';
 //github activity
 import { Octicons } from '@primer/octicons';
 import { mustache } from 'mustache';
-import { githubactivity } from 'github-activity-feed';
+import { githubactivityfeed } from 'github-activity-feed';
 
 //components
 import { AppComponent } from './app.component';
@@ -58,7 +58,7 @@ import { JavascriptProjectsComponent } from './javascript-projects/javascript-pr
     MatSelectModule,
     HttpClientModule,
     FormsModule,
-    // githubactivityfeed
+    // githubactivityfeed,
     // octicons,
     // mustache
   ],
