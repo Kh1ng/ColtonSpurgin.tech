@@ -10,6 +10,8 @@ import { MatDividerModule } from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select'
 import { EMPTY } from 'rxjs'
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 //github activity
 import { Octicons } from '@primer/octicons';
@@ -54,6 +56,8 @@ import { JavascriptProjectsComponent } from './javascript-projects/javascript-pr
     MatGridListModule,
     MatDividerModule,
     MatSelectModule,
+    HttpClientModule,
+    FormsModule,
     // githubactivityfeed
     // octicons,
     // mustache
