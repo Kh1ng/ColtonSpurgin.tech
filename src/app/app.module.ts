@@ -29,6 +29,7 @@ import { TerminalComponent } from './terminal/terminal.component';
 import { SocialsComponent } from './socials/socials/socials.component';
 import { HomeLabComponent } from './home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './javascript-projects/javascript-projects.component';
+import { AltLandingComponent } from './alt-landing/alt-landing.component';
 
 
 
@@ -43,7 +44,8 @@ import { JavascriptProjectsComponent } from './javascript-projects/javascript-pr
     TerminalComponent,
     SocialsComponent,
     HomeLabComponent,
-    JavascriptProjectsComponent
+    JavascriptProjectsComponent,
+    AltLandingComponent
   ],
   imports: [
     BrowserModule,
