@@ -8,10 +8,11 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSelectModule } from '@angular/material/select'
-import { EMPTY } from 'rxjs'
+import { MatSelectModule } from '@angular/material/select';
+import { EMPTY } from 'rxjs';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 //github activity
 import { Octicons } from '@primer/octicons';
@@ -20,18 +21,16 @@ import { githubactivityfeed } from 'github-activity-feed';
 
 //components
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { LandingComponent } from './landing/landing.component';
-import { AirForceComponent } from './air-force/air-force.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { GhactivityComponent } from './ghactivity/ghactivity.component';
-import { TerminalComponent } from './terminal/terminal.component';
-import { SocialsComponent } from './socials/socials/socials.component';
-import { HomeLabComponent } from './home-lab/home-lab.component';
-import { JavascriptProjectsComponent } from './javascript-projects/javascript-projects.component';
-import { AltLandingComponent } from './alt-landing/alt-landing.component';
-
-
+import { HeaderComponent } from './Pages/header/header.component';
+import { LandingComponent } from './Pages/landing/landing.component';
+import { AirForceComponent } from './Pages/air-force/air-force.component';
+import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
+import { GhactivityComponent } from './Pages/ghactivity/ghactivity.component';
+import { TerminalComponent } from './Pages/terminal/terminal.component';
+import { SocialsComponent } from './Pages/socials/socials/socials.component';
+import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
+import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
+import { SinglePageComponent } from './single-page/single-page.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +44,7 @@ import { AltLandingComponent } from './alt-landing/alt-landing.component';
     SocialsComponent,
     HomeLabComponent,
     JavascriptProjectsComponent,
-    AltLandingComponent
+    SinglePageComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,11 +59,12 @@ import { AltLandingComponent } from './alt-landing/alt-landing.component';
     MatSelectModule,
     HttpClientModule,
     FormsModule,
+    AngularFullpageModule,
     // githubactivityfeed,
     // octicons,
     // mustache
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

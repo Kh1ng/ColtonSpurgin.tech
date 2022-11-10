@@ -1,0 +1,38 @@
+<body class="fluid-container">
+  <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
+    <div class="section">
+      <app-landing></app-landing>
+    </div>
+    <div class="section" (click)="fullpage_api.moveSectionDown()">
+      <app-air-force></app-air-force>
+    </div>
+    <div class="section">
+      <div class="slide">
+        <figure class="figure">
+          <img class="figure-img img-fluid rounded" src="assets/helo.jpg" />
+          <figcaption class="p-4 card-img-right">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
+              ipsum laudantium rerum ipsa, facilis magni? Obcaecati distinctio
+              laboriosam at. Aspernatur sed dolores vel autem maiores nemo ex
+              dolorum unde eveniet.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="slide">
+        <div class="bio-slide">
+          <img src="assets/roof vent.jpg" />
+        </div>
+      </div>
+      <div class="slide">
+        <div class="bio-slide">
+          <img src="assets/search.jpg" />
+        </div>
+      </div>
+    </div>
+    <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
+      <app-terminal></app-terminal>
+    </div>
+  </div>
+</body>

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltLandingComponent } from './alt-landing.component';
+import { AltLandingComponent } from './single-page.component';
 
 describe('AltLandingComponent', () => {
   let component: AltLandingComponent;
@@ -8,9 +8,8 @@ describe('AltLandingComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AltLandingComponent ]
-    })
-    .compileComponents();
+      declarations: [AltLandingComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(AltLandingComponent);
     component = fixture.componentInstance;
