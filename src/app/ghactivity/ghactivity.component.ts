@@ -9,13 +9,13 @@ import * as GitHubActivity from 'github-activity-feed';
 export class GhactivityComponent implements OnInit {
   constructor() {}
 
-  ghf: any = GitHubActivity.feed({
+  #id: any = GitHubActivity.feed({
     username: 'Kh1ng',
     selector: '#feed',
     limit: 20, // optional
   });
 
   ngOnInit(): void {
-    this.ghf;
+    this.#id;
   }
 }
