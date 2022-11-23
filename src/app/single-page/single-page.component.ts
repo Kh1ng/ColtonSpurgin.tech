@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { LandingComponent } from '../Pages/landing/landing.component';
+import { AirForceComponent } from '../Pages/air-force/air-force.component';
+import { TerminalComponent } from '../Pages/terminal/terminal.component';
 
 @Component({
   selector: 'app-single-page',
