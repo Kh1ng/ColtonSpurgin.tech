@@ -1,38 +1,65 @@
 <body class="fluid-container">
   <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
     <div class="section">
-      <app-landing></app-landing>
+      <app-bio></app-bio>
+    </div>
+    <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
+      <app-terminal></app-terminal>
     </div>
     <div class="section" (click)="fullpage_api.moveSectionDown()">
       <app-air-force></app-air-force>
     </div>
     <div class="section">
       <div class="slide">
-        <figure class="figure">
-          <img class="figure-img img-fluid rounded" src="assets/helo.jpg" />
-          <figcaption class="p-4 card-img-right">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos
-              ipsum laudantium rerum ipsa, facilis magni? Obcaecati distinctio
-              laboriosam at. Aspernatur sed dolores vel autem maiores nemo ex
-              dolorum unde eveniet.
+        <div class="row container-fluid">
+          <div class="col">
+            <h1>Cool stuff</h1>
+            <img src="assets/helo.jpg" />
+            <!-- <img class="figure-img img-slide rounded" src="assets/search.jpg" /> -->
+          </div>
+          <div class="col">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              iusto quaerat molestiae excepturi modi veritatis laborum, est
+              possimus itaque assumenda sunt voluptatibus. Corrupti, quae
+              doloremque! Corrupti ipsam laboriosam aliquid sit!
             </p>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="slide">
-        <div class="bio-slide">
-          <img src="assets/roof vent.jpg" />
+          </div>
         </div>
       </div>
       <div class="slide">
-        <div class="bio-slide">
-          <img src="assets/search.jpg" />
+        <div class="row container-fluid">
+          <div class="col">
+            <h1>Cool stuff</h1>
+            <img src="assets/roof vent.jpg" />
+            <!-- <img class="figure-img img-slide rounded" src="assets/search.jpg" /> -->
+          </div>
+          <div class="col">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              iusto quaerat molestiae excepturi modi veritatis laborum, est
+              possimus itaque assumenda sunt voluptatibus. Corrupti, quae
+              doloremque! Corrupti ipsam laboriosam aliquid sit!
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
-      <app-terminal></app-terminal>
+      <div class="slide">
+        <div class="row container-fluid">
+          <div class="col">
+            <h1>Cool stuff</h1>
+            <img class="img-fluid rounded" src="assets/search.jpg" />
+          </div>
+          <div class="col">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              iusto quaerat molestiae excepturi modi veritatis laborum, est
+              possimus itaque assumenda sunt voluptatibus. Corrupti, quae
+              doloremque! Corrupti ipsam laboriosam aliquid sit!
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>

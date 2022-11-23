@@ -22,7 +22,7 @@ import { githubactivityfeed } from 'github-activity-feed';
 //components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './Pages/header/header.component';
-import { LandingComponent } from './Pages/landing/landing.component';
+import { BioComponent } from './Pages/bio/bio.component';
 import { AirForceComponent } from './Pages/air-force/air-force.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { GhactivityComponent } from './Pages/ghactivity/ghactivity.component';
@@ -36,7 +36,7 @@ import { SinglePageComponent } from './single-page/single-page.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    LandingComponent,
+    BioComponent,
     AirForceComponent,
     PageNotFoundComponent,
     GhactivityComponent,

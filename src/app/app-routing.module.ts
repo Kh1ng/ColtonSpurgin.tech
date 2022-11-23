@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LandingComponent } from './Pages/landing/landing.component';
+import { BioComponent } from './Pages/bio/bio.component';
 import { PageNotFoundComponent } from './Pages/page-not-found/page-not-found.component';
 import { AirForceComponent } from './Pages/air-force/air-force.component';
 import { TerminalComponent } from './Pages/terminal/terminal.component';
@@ -13,8 +13,8 @@ import { SinglePageComponent } from './single-page/single-page.component';
 // import { from } from 'rxjs';
 
 const routes: Routes = [
-  { path: 'landing-component', component: LandingComponent },
-  { path: '', redirectTo: 'landing-component', pathMatch: 'full' },
+  { path: 'bio', component: BioComponent },
+  { path: '', redirectTo: 'AltLanding', pathMatch: 'full' },
   { path: 'AirForce', component: AirForceComponent },
   { path: 'GHActivityComponent', component: GhactivityComponent },
   { path: 'socials', component: SocialsComponent },
