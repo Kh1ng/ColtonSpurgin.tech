@@ -1,5 +1,5 @@
 import { Component, NgModule, OnInit } from '@angular/core';
-import * as GitHubActivity from 'github-activity-feed';
+// import * as GitHubActivity from 'github-activity-feed';
 
 @Component({
   selector: 'app-ghactivity',
@@ -9,13 +9,13 @@ import * as GitHubActivity from 'github-activity-feed';
 export class GhactivityComponent implements OnInit {
   constructor() {}
 
-  #id: any = GitHubActivity.feed({
-    username: 'Kh1ng',
-    selector: '#feed',
-    limit: 20, // optional
-  });
+  // #id: any = GitHubActivity.feed({
+  //   username: 'Kh1ng',
+  //   selector: '#feed',
+  //   limit: 20, // optional
+  // });
 
   ngOnInit(): void {
-    this.#id;
+    // this.#id;
   }
 }
