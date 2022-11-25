@@ -2,6 +2,7 @@
   <div fullpage id="fullpage" [options]="config" (ref)="getRef($event)">
     <div class="section">
       <app-bio></app-bio>
+      <!-- <app-ghactivity></app-ghactivity> -->
     </div>
     <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
       <app-terminal></app-terminal>

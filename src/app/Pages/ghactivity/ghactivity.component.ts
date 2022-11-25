@@ -1,5 +1,9 @@
+import { DeclareFunctionStmt } from '@angular/compiler';
 import { Component, NgModule, OnInit } from '@angular/core';
+import { throttleTime } from 'rxjs-compat/operator/throttleTime';
 // import * as GitHubActivity from 'github-activity-feed';
+
+declare const GHfeed: any;
 
 @Component({
   selector: 'app-ghactivity',
@@ -7,13 +11,12 @@ import { Component, NgModule, OnInit } from '@angular/core';
   styleUrls: ['./ghactivity.component.scss'],
 })
 export class GhactivityComponent implements OnInit {
-  constructor() {}
+  feed: any;
+  constructor() {
+    this.feed = GHfeed;
+  }
 
-  // #id: any = GitHubActivity.feed({
-  //   username: 'Kh1ng',
-  //   selector: '#feed',
-  //   limit: 20, // optional
-  // });
+  
 
   ngOnInit(): void {
     // this.#id;

@@ -33,7 +33,8 @@
             ],
             "scripts": [
               "node_modules/mustache/mustache.min.js",
-              "node_modules/github-activity-feed/dist/github-activity.min.js"
+              "node_modules/github-activity-feed/dist/github-activity.min.js",
+              "src/assets/JSProjects/ghact.js"
             ]
           },
           "configurations": {
@@ -107,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
