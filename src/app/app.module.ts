@@ -31,6 +31,7 @@ import { SocialsComponent } from './Pages/socials/socials/socials.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
 import { SinglePageComponent } from './single-page/single-page.component';
+import { GuessingGameComponent } from './Pages/javascript-projects/guessing-game/guessing-game.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { SinglePageComponent } from './single-page/single-page.component';
     HomeLabComponent,
     JavascriptProjectsComponent,
     SinglePageComponent,
+    GuessingGameComponent,
   ],
   imports: [
     BrowserModule,
