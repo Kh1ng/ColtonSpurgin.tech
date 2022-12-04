@@ -9,15 +9,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
-import { EMPTY } from 'rxjs';
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
-//github activity
-import { Octicons } from '@primer/octicons';
-import { mustache } from 'mustache';
-import { githubactivityfeed } from 'github-activity-feed';
+//ngproj
+import { NgProjComponent } from './ngproj/ngproj.component';
+import { HomeComponent } from './ngproj/home/home.component';
+import { UserComponent } from './ngproj/user/user.component';
 
 //components
 import { AppComponent } from './app.component';
@@ -31,6 +32,7 @@ import { SocialsComponent } from './Pages/socials/socials/socials.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
 import { SinglePageComponent } from './single-page/single-page.component';
+// import { ProjComponent } from './ngproj/proj/proj.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,9 @@ import { SinglePageComponent } from './single-page/single-page.component';
     HomeLabComponent,
     JavascriptProjectsComponent,
     SinglePageComponent,
+    NgProjComponent,
+    HomeComponent,
+    UserComponent,
   ],
   imports: [
     BrowserModule,
@@ -60,6 +65,10 @@ import { SinglePageComponent } from './single-page/single-page.component';
     HttpClientModule,
     FormsModule,
     AngularFullpageModule,
+    // Observable,
+    // throwError,
+    // catchError,
+    // retry
     // githubactivityfeed,
     // octicons,
     // mustache

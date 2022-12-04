@@ -1,36 +1,22 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { subscribeOn } from 'rxjs-compat/operator/subscribeOn';
-
 
 @Component({
   selector: 'app-terminal',
   templateUrl: './terminal.component.html',
-  styleUrls: ['./terminal.component.scss']
+  styleUrls: ['./terminal.component.scss'],
 })
 export class TerminalComponent implements OnInit {
   loadedPosts = [];
+  screen: any;
 
-  constructor(private http: HttpClient) { }
-
-  onCreatePost(postData: { title: string; content: string }) {
-    // Send Http request
-    console.log(postData);
+  constructor(private http: HttpClient) {
+    // screen = this.getStart();
   }
 
-  onFetchPosts() {
-    // Send Http request
-    let dat = this.http.get('localhost:8080/greeting').subscribe(content => {
-      console.log(content)
-    });
-      console.log(dat.toString());
-  }
+  ngOnInit(): void {}
 
-  onClearPosts() {
-    // Send Http request
+  getStart() {
+    return this.http.get('localhost:8080/start');
   }
-
-  ngOnInit(): void {
-  }
-
 }

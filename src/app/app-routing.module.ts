@@ -12,9 +12,22 @@ import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascr
 import { SinglePageComponent } from './single-page/single-page.component';
 // import { from } from 'rxjs';
 
+//NgProject
+import { HomeComponent } from './ngproj/home/home.component';
+import { UserComponent } from './ngproj/user/user.component';
+import { NgProjComponent } from './ngproj/ngproj.component';
+
 const routes: Routes = [
   { path: 'bio', component: BioComponent },
   { path: '', redirectTo: 'AltLanding', pathMatch: 'full' },
+  {
+    path: 'ngproj',
+    component: NgProjComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'user/:id', component: UserComponent },
+    ],
+  },
   { path: 'AirForce', component: AirForceComponent },
   { path: 'GHActivityComponent', component: GhactivityComponent },
   { path: 'socials', component: SocialsComponent },
