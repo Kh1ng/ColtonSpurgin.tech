@@ -1,6 +1,4 @@
-import { DeclareFunctionStmt } from '@angular/compiler';
 import { Component, NgModule, OnInit } from '@angular/core';
-import { throttleTime } from 'rxjs-compat/operator/throttleTime';
 
 @Component({
   selector: 'app-ghactivity',
