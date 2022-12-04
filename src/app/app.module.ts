@@ -32,6 +32,7 @@ import { SocialsComponent } from './Pages/socials/socials/socials.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
 import { SinglePageComponent } from './single-page/single-page.component';
+import { GuessingGameComponent } from './Pages/javascript-projects/guessing-game/guessing-game.component';
 // import { ProjComponent } from './ngproj/proj/proj.component';
 
 @NgModule({
@@ -47,6 +48,7 @@ import { SinglePageComponent } from './single-page/single-page.component';
     HomeLabComponent,
     JavascriptProjectsComponent,
     SinglePageComponent,
+    GuessingGameComponent,
     NgProjComponent,
     HomeComponent,
     UserComponent,
