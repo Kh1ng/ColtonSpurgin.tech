@@ -9,4 +9,8 @@ export class NgProjComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  needToolbar() {
+    // console.log(document.location.origin);
+  }
 }

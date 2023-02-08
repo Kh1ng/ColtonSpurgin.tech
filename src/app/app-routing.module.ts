@@ -26,6 +26,7 @@ const routes: Routes = [
     children: [
       { path: '', component: HomeComponent },
       { path: 'user/:id', component: UserComponent },
+      { path: 'head', component: HeaderComponent },
     ],
   },
   { path: 'AirForce', component: AirForceComponent },
