@@ -1,0 +1,112 @@
+<body>
+    <div style="text-align: center"><h1>This will be a (fake) terminal one day</h1> </div>
+    <div class="container-fluid p-5">
+        <div class="row">  
+
+                <div class="term col rounded border container-fluid ">
+                    <div class="out">
+                        <pre>
+                                                                ~~~ I use Arch btw ~~~ 
+                              ``                          ┌───────── Hardware Information ─────────┐ 
+                              //                            ​   ​     ROG Zephyrus G14 GA401QM_GA401QM 1.0 
+                             -++:                           ​   ​     AMD Ryzen 9 5900HS with Radeon Graphics (16) @ 3.3GHz 
+                            .+++o-                          ​   ​ ﬙    AMD ATI 04:00.0 Cezanne 
+                           `+oo++o.                         ​   ​ 塞   4201MiB / 15399MiB (27%) 
+    ```....-----::::-`+ooooooo`.::::------...```          ├───────── Software Information ─────────┤ 
+                   ```-/++++ooooo++++++:````                ​   ​ ​    khing 
+                       `-ooo++oo++ooo/`                     ​   ​     XeroLinux-KDE 
+                        //+oooooooooo+`                     ​   ​     Linux 5.19.10-arch1-1 
+                       +ss+/+oooooooooo`                    ​   ​     Plasma 5.25.5 
+                      +sso++++++++++++++`                   ​   ​     KWin 
+                     /o+/++++/-./+++++++/`                  ​   ​     bash 5.1.16 
+                   `/+/+++++.    ./++++++/`                 ​   ​     konsole 
+                 ``/+++++++.      `/++++++/`                ​   ​     Layan, Layan-Dark-Solid 
+           ...---:///++++++        /:/+++//::-...````       ​   ​     1708 (pacman), 1 (dpkg) 
+                `/+++++++++        +++++++/:.               ​   ​ 󰅐    1 day, 2 hours, 44 mins 
+               `/+++++/:-..        ..-:/+++++/`             ​   ​ ﬙    amdgpu 
+              `/++/-.`                  `.:/++/`            ​   ​     2% 
+             `/:.`                          `.:/`           ​   ​     192.168.1.83 
+                                                          └───────────────────────────────────────┘ 
+                                                                                      
+                        </pre>
+                </div>
+                <div class="input border-top cli">
+                    <div class="row">
+                        <div class="col-sm">    
+                            [root@ColtonSpurgin.tech]$  
+                        </div>
+                        <div class="col float-start">
+                            <form><input class="in container-fluid" type="text" id="cmd" value="[]"></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1">
+
+            </div>
+            <div class="col info rounded border p-2">
+                    <h4>Soon(tm.)</h4>
+                    Built in Angular and Spring Boot, front end communicates to a RESTful API in Java. Showcases school projects written in Java. Themed off my 
+                    <a href="https://xerolinux.xyz/">XeroLinux</a> terminal.
+            </div>
+        </div>  
+    </div>
+    TESTING
+    <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <!-- <form #postForm="ngForm" (ngSubmit)="onCreatePost(postForm.value)"> -->
+              <div class="form-group">
+                <label for="title">Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="title"
+                  required
+                  ngModel
+                  name="title"
+                />
+              </div>
+              <div class="form-group">
+                <label for="content">Content</label>
+                <textarea
+                  class="form-control"
+                  id="content"
+                  required
+                  ngModel
+                  name="content"
+                ></textarea>
+              </div>
+              <!-- <button
+                class="btn btn-primary"
+                type="submit"
+                [disabled]="!postForm.valid"
+              >
+                Send Post
+              </button> -->
+            <!-- </form> -->
+          </div>
+        </div>
+        <hr />
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <!-- <button class="btn btn-primary" (click)="onFetchPosts()">
+              Fetch Posts
+            </button>
+            |
+            <button
+              class="btn btn-danger"
+              [disabled]="loadedPosts.length < 1"
+              (click)="onClearPosts()"
+            >
+              Clear Posts
+            </button> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <p>No posts available!</p>
+          </div>
+        </div>
+      </div>
+</body>

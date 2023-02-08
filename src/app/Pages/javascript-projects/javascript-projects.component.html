@@ -1,0 +1,29 @@
+<div class="main container-fluid">
+  <div *ngIf="this.selected == 1" class="guessing">
+    <app-guessing-game></app-guessing-game>
+  </div>
+  <div class="container-fluid">
+    <h1>Javascript Projects</h1>
+  </div>
+  <div class="container-fluid">
+    <h4>Select a Project</h4>
+    <form>
+      <mat-form-field appearance="fill">
+        <mat-label>Select an option</mat-label>
+        <mat-select [(value)]="selected">
+          <mat-option>None</mat-option>
+          <mat-option value="1">Guessing Game</mat-option>
+          <mat-option value="2">Option 2</mat-option>
+          <mat-option value="3">Option 3</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </form>
+  </div>
+
+  <div class="theStuff container-fluid">
+    {{ theStuff(selected) }}
+  </div>
+  <div class="container-fluid theNotes">
+    {{ theNotes(selected) }}
+  </div>
+</div>

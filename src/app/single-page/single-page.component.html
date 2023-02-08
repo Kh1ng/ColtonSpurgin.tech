@@ -1,0 +1,69 @@
+<body class="fluid-container">
+  <div>
+    <div class="section">
+      <app-bio></app-bio>
+    </div>
+    <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
+      <ngproj-root></ngproj-root>
+    </div>
+    <div class="section" (click)="fullpage_api.moveTo('secondPage', 2)">
+      <app-terminal></app-terminal>
+    </div>
+    <div class="section" (click)="fullpage_api.moveSectionDown()">
+      <app-air-force></app-air-force>
+    </div>
+    <div class="section">
+      <div class="slide container-fluid">
+        <app-javascript-projects></app-javascript-projects>
+      </div>
+      <div class="slide container-fluid">
+        <app-home-lab></app-home-lab>
+      </div>
+      <div class="slide">
+        <div class="row container-fluid">
+          <div class="col">
+            <h1>Cool stuff</h1>
+            <img src="assets/helo.jpg" />
+            <!-- <img class="figure-img img-slide rounded" src="assets/search.jpg" /> -->
+          </div>
+          <div class="col">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              iusto quaerat molestiae excepturi modi veritatis laborum, est
+              possimus itaque assumenda sunt voluptatibus. Corrupti, quae
+              doloremque! Corrupti ipsam laboriosam aliquid sit!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="slide container">
+        <div class="row">
+          <div class="col">
+            <img class="img-fluid" src="assets/roof vent.jpg" />
+          </div>
+          <div class="col">
+            <p class="text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+              iusto quaerat molestiae excepturi modi veritatis laborum, est
+              possimus itaque assumenda sunt voluptatibus. Corrupti, quae
+              doloremque! Corrupti ipsam laboriosam aliquid sit!
+            </p>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img class="img-fluid" src="assets/search.jpg" />
+            </div>
+            <div class="col">
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                iusto quaerat molestiae excepturi modi veritatis laborum, est
+                possimus itaque assumenda sunt voluptatibus. Corrupti, quae
+                doloremque! Corrupti ipsam laboriosam aliquid sit!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
