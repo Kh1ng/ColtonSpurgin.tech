@@ -9,7 +9,7 @@ import { GhactivityComponent } from './Pages/ghactivity/ghactivity.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { SocialsComponent } from './Pages/socials/socials/socials.component';
 import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
-// import { from } from 'rxjs';
+import { LandingComponent } from './Pages/landing/landing.component';
 
 //NgProject
 import { HomeComponent } from './ngproj/home/home.component';
@@ -17,8 +17,9 @@ import { UserComponent } from './ngproj/user/user.component';
 import { NgProjComponent } from './ngproj/ngproj.component';
 
 const routes: Routes = [
+  { path: 'landing', component: LandingComponent },
   { path: 'bio', component: BioComponent },
-  { path: '', redirectTo: 'AltLanding', pathMatch: 'full' },
+  { path: '', redirectTo: 'landing', pathMatch: 'full' },
   {
     path: 'ngproj',
     component: NgProjComponent,
