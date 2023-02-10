@@ -61,14 +61,6 @@ import { LandingComponent } from './Pages/landing/landing.component';
     MatDividerModule,
     MatSelectModule,
     HttpClientModule,
-    FormsModule,
-    // Observable,
-    // throwError,
-    // catchError,
-    // retry
-    // githubactivityfeed,
-    // octicons,
-    // mustache
   ],
   providers: [],
   bootstrap: [AppComponent],
