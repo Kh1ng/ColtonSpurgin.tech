@@ -31,6 +31,7 @@ import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
 import { GuessingGameComponent } from './Pages/javascript-projects/guessing-game/guessing-game.component';
 import { LandingComponent } from './Pages/landing/landing.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -54,13 +55,14 @@ import { LandingComponent } from './Pages/landing/landing.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
+    HttpClientModule,
+    FontAwesomeModule,
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
     MatDividerModule,
     MatSelectModule,
-    HttpClientModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
