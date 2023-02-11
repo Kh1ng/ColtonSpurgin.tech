@@ -1,20 +1,21 @@
 <mat-toolbar class="c1 flex bg-700 w-screen max-h-24">
   <span
     ><a routerLink="../">
-      <mat-icon class="home" aria-hidden="false" aria-label="Home"
+      <mat-icon color="primary" size="lg" class="home" aria-hidden="false" aria-label="Home"
         >home</mat-icon
       >
     </a></span
   >
 
   <span class="big-spacer"></span>
-  <button mat-raised-button class="menu-entry shadow-lg" routerLink="../bio">
+  <button mat-raised-button color="primary" class="menu-entry shadow-lg" routerLink="../bio">
     About Me
   </button>
   <span class="small-spacer"></span>
   <button
     mat-raised-button
     class="menu-entry shadow-lg"
+    color="primary"
     routerLink="../AirForce"
   >
     Air Force
@@ -22,6 +23,7 @@
   <span class="small-spacer"></span>
   <button
     mat-raised-button
+    color="primary"
     class="menu-entry shadow-lg"
     routerLink="../HomeLab"
   >
@@ -29,18 +31,21 @@
   </button>
 
   <span class="small-spacer"></span>
-  <button
-    mat-raised-button
-    class="menu-entry shadow-lg"
-    routerLink="../JavascriptProjects"
-  >
-    Javascript Projects
-  </button>
+  <a href="https://kh1ng.github.io/">
+    <button
+        mat-raised-button
+        color="primary"
+        class="menu-entry shadow-lg"
+        routerLink="../JavascriptProjects"
+      >
+      Javascript Projects
+    </button>
+  </a>
   <span class="small-spacer"></span>
   <button
     mat-raised-button
     class="menu-entry shadow-lg"
-    routerLink="../socials"
+    color="primary"
   >
     Angular Project
   </button>
