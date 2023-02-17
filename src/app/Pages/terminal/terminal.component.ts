@@ -7,16 +7,11 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./terminal.component.scss'],
 })
 export class TerminalComponent implements OnInit {
-  loadedPosts = [];
-  screen: any;
 
-  constructor(private http: HttpClient) {
+
+  constructor() {
     // screen = this.getStart();
   }
 
   ngOnInit(): void {}
-
-  getStart() {
-    return this.http.get('localhost:8080/start');
-  }
 }

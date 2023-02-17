@@ -8,7 +8,6 @@ import { HeaderComponent } from './Pages/header/header.component';
 import { GhactivityComponent } from './Pages/ghactivity/ghactivity.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { SocialsComponent } from './Pages/socials/socials/socials.component';
-import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
 import { LandingComponent } from './Pages/landing/landing.component';
 
 //NgProject
@@ -33,7 +32,6 @@ const routes: Routes = [
   { path: 'socials', component: SocialsComponent },
   { path: 'term', component: TerminalComponent },
   { path: 'HomeLab', component: HomeLabComponent },
-  { path: 'JavascriptProjects', component: JavascriptProjectsComponent },
   { path: '**', component: PageNotFoundComponent },
 ];
 
