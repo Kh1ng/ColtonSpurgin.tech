@@ -1,0 +1,44 @@
+<app-header class="fixed top-0 left-0 w-full drop-shadow-2xl"></app-header>
+<div
+  class="bg-600 w-screen h-screen text-center align-middle justify-center items-center grid grid-cols-1"
+>
+  <div class="w-fit inline-block mx-auto mt-32">
+    <div class="inline-block align-text-top text-left pb-2 text-sm">
+      <span class="text-200">Hello, I am</span>
+      <span class="text-4xl font-bold font-serif text-50">
+        Colton Spurgin
+      </span>
+      <span class="text-200 font-sans"> and I like to build things.</span>
+    </div>
+    <div class="max-w-md">
+      <p class="text-left text-900 pt-2 pb-3 font-sans">
+        I am currently in search of my next challenge. Among my many interests,
+        I am currently most interested on front end web development.
+      </p>
+    </div>
+    <div class="flex pt-3">
+      <button mat-raised-button color="primary" routerLink="../term" class="pt-3 but">Checkout my work!</button>
+    </div>
+  </div>
+  <div class="grid grid-cols-4 max-h-4 w-full relative max-w-fit ml-2">
+    <div
+      class="relative inline-block justify-items-start content-end gird grid-cols-1 gap-x-64 mx-0 mt-10"
+    >
+      <div>
+        <a href="https://github.com/Kh1ng">
+          <fa-icon class="mx-auto" size="2x" [icon]="faGithub"></fa-icon>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/coltonspurgin">
+          <fa-icon class="mx-auto" size="2x" [icon]="faLinkedin"></fa-icon>
+        </a>
+      </div>
+      <div>
+        <a href="mailto:colton.spurgin1@gmail.com">
+          <fa-icon class="mx-auto" size="2x" [icon]="faEnvelope"></fa-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatGridListModule } from '@angular/material/grid-list';
@@ -13,7 +12,6 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, retry } from 'rxjs/operators';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 
 //ngproj
 import { NgProjComponent } from './ngproj/ngproj.component';
@@ -31,9 +29,9 @@ import { TerminalComponent } from './Pages/terminal/terminal.component';
 import { SocialsComponent } from './Pages/socials/socials/socials.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
-import { SinglePageComponent } from './single-page/single-page.component';
 import { GuessingGameComponent } from './Pages/javascript-projects/guessing-game/guessing-game.component';
-// import { ProjComponent } from './ngproj/proj/proj.component';
+import { LandingComponent } from './Pages/landing/landing.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -47,33 +45,24 @@ import { GuessingGameComponent } from './Pages/javascript-projects/guessing-game
     SocialsComponent,
     HomeLabComponent,
     JavascriptProjectsComponent,
-    SinglePageComponent,
     GuessingGameComponent,
     NgProjComponent,
     HomeComponent,
     UserComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
-    MatToolbarModule,
+    HttpClientModule,
+    FontAwesomeModule,
     MatIconModule,
     MatButtonModule,
     MatGridListModule,
     MatDividerModule,
     MatSelectModule,
-    HttpClientModule,
-    FormsModule,
-    AngularFullpageModule,
-    // Observable,
-    // throwError,
-    // catchError,
-    // retry
-    // githubactivityfeed,
-    // octicons,
-    // mustache
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

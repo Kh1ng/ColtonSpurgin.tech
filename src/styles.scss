@@ -1,7 +1,8 @@
-
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
+
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -14,32 +15,65 @@
 // hue. Available color palettes: https://material.io/design/color/
 $cssite-primary: mat.define-palette(mat.$indigo-palette);
 $cssite-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-$background-color: #628cc9;
 
 // The warn palette is optional (defaults to red).
 $cssite-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$cssite-theme: mat.define-light-theme((
-  color: (
-    primary: $cssite-primary,
-    accent: $cssite-accent,
-    warn: $cssite-warn,
+$cssite-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $cssite-primary,
+      accent: $cssite-accent,
+      warn: $cssite-warn,
+    ),
   )
-));
+);
 
+// @include theme.scss;
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($cssite-theme);
 
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-html, body { height: 100%; }
-body { 
+html,
+body {
+  height: 100%;
+}
+body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #212529;
 }
 
+.c50 {
+  color: #e4f7f8;
+}
+
+.c100 {
+  color: #cceef2;
+}
+
+.c200 {
+  color: #9cd7e5;
+}
+
+.c300 {
+}
+
+.c400 {
+}
+
+// 300: "#6CB9D8",
+// 400: "#3B94CB",
+// 500: "#2A669F",
+// 600: "#234B83",
+// 700: "#1B3366",
+// 800: "#14204A",
+// 900: "#0C102E",
+//

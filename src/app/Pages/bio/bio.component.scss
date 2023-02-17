@@ -1,66 +1,9 @@
-/*Background boxes for text*/
-.bio {
-  margin: 0.5%;
-  background-color: #90afc5;
-}
-
-/*Text*/
-.bio p {
-  padding: 2%;
-}
-
-.me {
-  border-radius: 50%;
-  padding-bottom: 0%;
-  padding-top: 10%;
-}
-
-.left {
-  margin: 0.5%;
-  background-color: #90afc5;
-  padding: 0.5%;
-}
-
-body {
-  padding: 1%;
-}
-
 .links {
   align-content: center;
   display: flex;
   display: inline-block;
   flex: 0.3 0.3 0; /* flex-grow: 1; flex-shrink: 1; flex-basis: 0 */
   padding: 1%;
-}
-
-.small-spacer {
-  flex: 1 1 auto;
-}
-
-.right {
-  margin: 0.5%;
-  background-color: #90afc5;
-  padding: 0.5%;
-}
-
-.intro {
-  padding-left: 9%;
-  padding-top: 5%;
-}
-
-h2 {
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-}
-
-figure {
-  max-width: 15%;
-  max-height: fit-content;
-  padding: 10%;
-  // padding-top: 10%;
 }
 
 a:link {
