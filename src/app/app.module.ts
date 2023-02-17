@@ -28,8 +28,6 @@ import { GhactivityComponent } from './Pages/ghactivity/ghactivity.component';
 import { TerminalComponent } from './Pages/terminal/terminal.component';
 import { SocialsComponent } from './Pages/socials/socials/socials.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
-import { JavascriptProjectsComponent } from './Pages/javascript-projects/javascript-projects.component';
-import { GuessingGameComponent } from './Pages/javascript-projects/guessing-game/guessing-game.component';
 import { LandingComponent } from './Pages/landing/landing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
@@ -44,8 +42,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TerminalComponent,
     SocialsComponent,
     HomeLabComponent,
-    JavascriptProjectsComponent,
-    GuessingGameComponent,
     NgProjComponent,
     HomeComponent,
     UserComponent,
