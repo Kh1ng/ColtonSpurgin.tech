@@ -1,10 +1,9 @@
-
+// @import url('cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
 
 .term {
     background-color: rgb(9, 12, 33);
     color: rgb(222, 222, 222);
     white-space: nowrap;
-    @import url('cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
 }
 
 .out {
@@ -14,11 +13,6 @@
 
 .cli {
     flex-direction: column;
-}
-
-body {
-    // background-color: rgba(174, 202, 202, 0.842);
-    padding: 2%;
 }
 
 .info {
@@ -33,11 +27,7 @@ body {
     min-width: max-content;
 }
 
-.type {
-    
-}
-
 .input {
-    width: fill;
+    width: stretch;
     float: inline-start;
 }
