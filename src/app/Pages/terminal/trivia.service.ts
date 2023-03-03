@@ -26,6 +26,12 @@ export class TriviaService {
     );
   }
 
+  private apiUrl = 'https://opentdb.com/api.php?amount=10&type=multiple';
+
+  getQuestionsAndAnswers() {
+    return this.http.get(this.apiUrl);
+  }
+
   ngOnInit() {
     console.log("init test");
     console.log(this.getQuestions())

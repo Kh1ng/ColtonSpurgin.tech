@@ -13,12 +13,18 @@ import { Question } from './question';
 export class TerminalComponent implements OnInit {
   
   questionList: any;
+  questionsAndAnswers: any[] = [];
 
   constructor(private triviaService: TriviaService) {
     this.questionList = this.triviaService.getQuestions();
   }
 
   ngOnInit(): void {
-    // this.questions = TriviaService.getQuestions();
+    this.triviaService.getQuestionsAndAnswers().subscribe((data: any) => {
+      this.questionsAndAnswers = data.results.map((result: any) => {
+        const answers = [...result.incorrect_answers, result.correct_answer];
+        return { question: result.question, answers };
+      });
+    });
   }
 }

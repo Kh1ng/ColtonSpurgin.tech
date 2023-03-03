@@ -9,14 +9,16 @@
     class="grid grid-cols-3 gap-4 align-middle justify-center items-center mx-auto mt-16 pt-4"
   >
     <div class="inline-block col"></div>
-    <div
-      class="inline-block col bg-900 text-100 rounded-md w-fit h-auto mx-auto"
-    >
-    Questions:
-    <ul>
-        <li *ngFor="let item of questionList">{{ item }}</li>
-    </ul>
-    
+    <div class="inline-block col bg-900 text-100 rounded-md w-fit h-auto mx-auto p-5">
+      <h2>Trivia Questions and Answers:</h2>
+      <ul>
+        <li *ngFor="let qa of questionsAndAnswers">
+          <strong>{{ qa.question }}</strong>
+          <ul>
+            <li *ngFor="let answer of qa.answers">{{ answer }}</li>
+          </ul>
+        </li>
+      </ul>
     </div>
     <div class="inline-block col"></div>
   </div>
