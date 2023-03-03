@@ -12,7 +12,11 @@
     <div
       class="inline-block col bg-900 text-100 rounded-md w-fit h-auto mx-auto"
     >
-      <p class="text-9xl p-24">Coming soon.......</p>
+    Questions:
+    <ul>
+        <li *ngFor="let item of questionList">{{ item }}</li>
+    </ul>
+    
     </div>
     <div class="inline-block col"></div>
   </div>

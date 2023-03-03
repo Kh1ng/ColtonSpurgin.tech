@@ -30,7 +30,7 @@ import { SocialsComponent } from './Pages/socials/socials/socials.component';
 import { HomeLabComponent } from './Pages/home-lab/home-lab.component';
 import { LandingComponent } from './Pages/landing/landing.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { DecisionsComponent } from './design-docs/decisions/decisions.component';
+import { DecisionsComponent } from './Pages/design-docs/decisions/decisions.component';
 import { DesignDocComponent } from './Pages/design-docs/design-doc/design-doc.component';
 
 @NgModule({
