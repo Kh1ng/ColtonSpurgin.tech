@@ -1,0 +1,35 @@
+.bg {
+  // background-image: url("../../../assets/mApV7W.jpg");
+  background-color: black;
+  background-size: fill;
+  background-repeat: repeat;
+}
+
+.myFace {
+  max-width: 30%;
+  height: auto;
+  margin: 1%;
+  border-radius: 10%;
+}
+
+/*Background boxes for text*/
+.bio {
+  border-radius: 2%;
+  margin: 1%;
+  padding: 1%;
+  background-color: #212529;
+}
+
+/*Text*/
+.bio p {
+  color: rgb(204, 201, 200);
+  font-size: medium;
+  opacity: 1;
+}
+
+.afsc {
+  max-width: 30%;
+  height: auto;
+  margin: 1%;
+  border-radius: 5%;
+}

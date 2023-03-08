@@ -1,0 +1,118 @@
+<h2>Technical Skills</h2>
+<mat-divider></mat-divider>
+<ul>
+  <li>Java</li>
+  <li>C++</li>
+  <li>Python</li>
+  <li>Rust</li>
+  <li>Javascript</li>
+  <li>Angular & Spring Boot Frameworks</li>
+</ul>
+
+<p class="intro">
+  &emsp; Hello and welcome to my online portfolio. Please feel free to look
+  around. I am a Junior at The University of West Florida studying Computer
+  Science. I am currently looking for opporotunities to apply what I have
+  learned. Due to my commitment to the Air Force I can only participate in part
+  time opportunities that are remote or around the Pensacola/Fort Walton Beach
+  area. I have created a pseudo terminal to run some of my CLI projects
+  <a routerLink="../AirForce-component">here.</a> I also have some of my
+  <a routerLink="../JavascriptProjects">javascript projects</a>,
+  <a routerLink="../socials">angular project</a> and some
+  <a routerLink="../HomeLab">networking and embedded projects</a>.
+  <mat-divider></mat-divider>
+</p>
+
+<p>
+  This site was built with Angular using Javascript, Typescript, HTML, CSS and
+  SCSS. I am currently developing a "back end" (A RESTful API through Spring
+  Boot) to showcase some of my school work, most of which does not run natively
+  on the web. I am most familiar with Java and C++ through my formal education;
+  however, I greatly enjoy learning new technologies and have spent time
+  creating personal projects in many languages. I am currently looking for a new
+  challenge to continue building my skills through an internship or job
+  opporotunity. Contact me below, I'm happy to talk.
+</p>
+<p>Contact me: ColtonSpurgin@yahoo.com</p>
+<div class="contianer">
+  <app-ghactivity></app-ghactivity>
+</div>
+
+<h2>Education</h2>
+<mat-divider></mat-divider>
+<h4>University of West Florida</h4>
+<ul>
+  --Bachelors of Science: Computer Science --Expected graduation: 2025 --UWF
+  Association of Computing Machinery: Member
+</ul>
+
+<h2>Work Experience</h2>
+<mat-divider></mat-divider>
+<ul>
+  <li>U.S. Air Force - Aerospace Medical Technician</li>
+  <li>CareFlite - EMT</li>
+  <li>Allegiance Ambulance - EMT</li>
+  <li>Guardian EMS - EMT</li>
+  <li>Melissa Fire Dept. - Driver/Operator/Engineer</li>
+  <li>CVS Pharmacy - Shift Supervisor</li>
+</ul>
+
+Term:
+<div style="text-align: center">
+  <h1>This will be a (fake) terminal one day</h1>
+</div>
+<div class="container-fluid p-5">
+  <div class="row">
+    <div class="term col rounded border container-fluid">
+      <div class="out">
+        <pre>
+                                                                ~~~ I use Arch btw ~~~ 
+                              ``                          ┌───────── Hardware Information ─────────┐ 
+                              //                            ​   ​     ROG Zephyrus G14 GA401QM_GA401QM 1.0 
+                             -++:                           ​   ​     AMD Ryzen 9 5900HS with Radeon Graphics (16) @ 3.3GHz 
+                            .+++o-                          ​   ​ ﬙    AMD ATI 04:00.0 Cezanne 
+                           `+oo++o.                         ​   ​ 塞   4201MiB / 15399MiB (27%) 
+    ```....-----::::-`+ooooooo`.::::------...```          ├───────── Software Information ─────────┤ 
+                   ```-/++++ooooo++++++:````                ​   ​ ​    khing 
+                       `-ooo++oo++ooo/`                     ​   ​     XeroLinux-KDE 
+                        //+oooooooooo+`                     ​   ​     Linux 5.19.10-arch1-1 
+                       +ss+/+oooooooooo`                    ​   ​     Plasma 5.25.5 
+                      +sso++++++++++++++`                   ​   ​     KWin 
+                     /o+/++++/-./+++++++/`                  ​   ​     bash 5.1.16 
+                   `/+/+++++.    ./++++++/`                 ​   ​     konsole 
+                 ``/+++++++.      `/++++++/`                ​   ​     Layan, Layan-Dark-Solid 
+           ...---:///++++++        /:/+++//::-...````       ​   ​     1708 (pacman), 1 (dpkg) 
+                `/+++++++++        +++++++/:.               ​   ​ 󰅐    1 day, 2 hours, 44 mins 
+               `/+++++/:-..        ..-:/+++++/`             ​   ​ ﬙    amdgpu 
+              `/++/-.`                  `.:/++/`            ​   ​     2% 
+             `/:.`                          `.:/`           ​   ​     192.168.1.83 
+                                                          └───────────────────────────────────────┘ 
+                                                                                      
+                        </pre
+        >
+      </div>
+      <div class="input border-top cli">
+        <div class="row">
+          <div class="col-sm">[root@ColtonSpurgin.tech]$</div>
+          <div class="col float-start">
+            <form>
+              <input
+                class="in container-fluid"
+                type="text"
+                id="cmd"
+                value="[]"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="col info rounded border p-2">
+      <h4>Soon(tm.)</h4>
+      Built in Angular and Spring Boot, front end communicates to a RESTful API
+      in Java. Showcases school projects written in Java. Themed off my
+      <a href="https://xerolinux.xyz/">XeroLinux</a> terminal.
+    </div>
+  </div>
+</div>

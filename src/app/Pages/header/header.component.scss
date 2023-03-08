@@ -1,0 +1,25 @@
+.c1 {
+  flex: 1 1 auto;
+  // background-color: #336b87;
+
+  //color: #336b87; old
+}
+
+.small-spacer {
+  flex: 0.1 0.5 auto;
+}
+
+.big-spacer {
+  flex: 10 10 auto;
+}
+
+.menu-entry {
+  flex: 0.5 0.5 auto;
+  // background-color: #336b87;
+  color: #14204a;
+}
+
+.home {
+  transform: scale(1.5);
+}
+// color: #336b87; //old

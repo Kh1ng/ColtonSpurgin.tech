@@ -1,0 +1,33 @@
+// @import url('cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
+
+.term {
+    background-color: rgb(9, 12, 33);
+    color: rgb(222, 222, 222);
+    white-space: nowrap;
+}
+
+.out {
+    white-space: normal; 
+    min-width: fit-content;
+}
+
+.cli {
+    flex-direction: column;
+}
+
+.info {
+    padding: 1%;
+    background-color: #90afc5;
+}
+
+.in {
+    background-color: rgb(9, 12, 33);
+    color: rgb(222, 222, 222);
+    border: 0;
+    min-width: max-content;
+}
+
+.input {
+    width: stretch;
+    float: inline-start;
+}
