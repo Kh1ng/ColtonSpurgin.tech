@@ -1,3 +1,5 @@
+
+
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use "@angular/material" as mat;
@@ -77,3 +79,6 @@ body {
 // 800: "#14204A",
 // 900: "#0C102E",
 //
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
