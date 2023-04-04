@@ -11,7 +11,7 @@ function App() {
     <div className="bg-600 w-screen h-screen text-center align-middle justify-center items-center grid grid-cols-1">
       <div className="w-fit inline-block mx-auto mt-32">
         <div className="inline-block align-text-top text-left pb-2 text-sm">
-          <span className="text-200">Hello, I am</span>
+          <span className="text-200">Hello, I am </span>
           <span className="text-4xl font-bold font-serif text-50">
             Colton Spurgin
           </span>
@@ -29,7 +29,8 @@ function App() {
         </div>
         <div className="flex pt-3">
           <a href="https://kh1ng.github.io/js-stuff/">
-            <button className="pt-3 btn bg-100 hover:bg-blue-700 text-900 font-bold py-2 px-4 rounded">
+            {/* button sucks */}
+            <button className="pt-3 btn bg-100 hover:bg-300 text-900 font-bold py-2 px-4 rounded">
               Checkout my work!
             </button>
           </a>
@@ -37,6 +38,7 @@ function App() {
       </div>
       <div className="grid grid-cols-4 max-h-4 w-full relative max-w-fit ml-2">
         <div className="relative inline-block justify-items-start content-end gird grid-cols-1 gap-x-64 mx-0 mt-10">
+          {/* TODO: Icons need to be responsive */}
           <div className="flex">
             <a href="https://github.com/Kh1ng">
               <FaGithub size={42} />
