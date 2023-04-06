@@ -28,10 +28,10 @@ function App() {
           </p>
         </div>
         <div className="flex pt-3">
-          <a href="https://kh1ng.github.io/js-stuff/">
+          <a href="https://">
             {/* button sucks */}
-            <button className="pt-3 btn bg-100 hover:bg-300 text-900 font-bold py-2 px-4 rounded">
-              Checkout my work!
+            <button className="pt-3 btn bg-200 hover:bg-400 text-900 font-bold py-2 px-4 rounded">
+              Checkout my newest project!
             </button>
           </a>
         </div>
