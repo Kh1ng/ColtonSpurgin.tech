@@ -28,7 +28,7 @@ function App() {
           </p>
         </div>
         <div className="flex pt-3">
-          <a href="https://">
+          <a href="https://bork.coltonspurgin.tech/">
             {/* button sucks */}
             <button className="pt-3 btn bg-200 hover:bg-400 text-900 font-bold py-2 px-4 rounded">
               Checkout my newest project!
