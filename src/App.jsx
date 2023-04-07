@@ -4,12 +4,22 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
+import Logo from "/src/logo.png";
+
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="bg-600 w-screen h-screen text-center align-middle justify-center items-center grid grid-cols-1">
-      <div className="w-fit inline-block mx-auto mt-32">
+    <div className="bg-600 w-screen h-screen text-center align-start justify-center items-center grid grid-cols-1 m-auto">
+      <div className="flex align-top h-fit w-fit mt-0 p-1 absolute top-0 left-0">
+        <img
+          src={Logo}
+          className="justify-start align-start items-start"
+          height={50}
+          width={50}
+        ></img>
+      </div>
+      <div className="w-fit inline-block mx-auto mt-32 sm:mt-0 sm:p-8">
         <div className="inline-block align-text-top text-left pb-2 text-sm">
           <span className="text-200">Hello, I am </span>
           <span className="text-4xl font-bold font-serif text-50">
@@ -36,9 +46,8 @@ function App() {
           </a>
         </div>
       </div>
-      <div className="grid grid-cols-4 max-h-4 w-full relative max-w-fit ml-2">
-        <div className="relative inline-block justify-items-start content-end gird grid-cols-1 gap-x-64 mx-0 mt-10">
-          {/* TODO: Icons need to be responsive */}
+      <div className="absolute flex bottom-0 align-baseline p-1 w-screen">
+        <div className="flex lg:flex-col sm:align-middle sm:justify-center">
           <div className="flex">
             <a href="https://github.com/Kh1ng">
               <FaGithub size={42} />
