@@ -25,10 +25,12 @@ function App() {
           <span className="text-4xl font-bold font-serif text-50 sm:px-1">
             Colton Spurgin
           </span>
-          <span className="text-200 font-sans">
+          <br></br>
+          <br></br>
+          <p className="indent-10 text-100 font-sans text-lg">
             {" "}
             and I like to build things.
-          </span>
+          </p>
         </div>
         <div className="max-w-md sm:px-1">
           <p className="text-left text-900 pt-2 pb-3 font-sans">
