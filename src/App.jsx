@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -7,8 +6,6 @@ import { FaGithub } from "react-icons/fa";
 import Logo from "/src/logo.png";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="bg-600 w-screen h-screen text-center align-start justify-center items-center grid grid-cols-1 m-auto">
       <div className="flex align-top h-fit w-fit mt-0 p-1 absolute top-0 left-0">
