@@ -17,20 +17,18 @@ function App() {
         ></img>
       </div>
       <div className="w-fit flex md:mx-auto p-1 max-w-md flex-col gap-1">
-        <div className="inline-block align-text-top text-left pb-2 text-sm">
-          <span className="text-200 sm:px-1">Hello, I am </span>
-          <span className="text-4xl font-bold font-serif text-50 sm:px-1">
+        <div className="inline-block align-text-top text-left pb-1 text-lg">
+          <p className="text-200 sm:px-1">Hello, I am </p>
+          <p className="text-4xl font-bold font-serif text-50 sm:px-1">
             Colton Spurgin
-          </span>
-          <br></br>
-          <br></br>
-          <p className="indent-10 text-100 font-sans text-lg">
+          </p>
+          <p className=" text-100 font-sans text-lg indent-28">
             {" "}
             and I like to build things.
           </p>
         </div>
         <div className="max-w-md sm:px-1">
-          <p className="text-left text-900 pt-2 pb-3 font-sans">
+          <p className="text-left text-900 pt-2 pb-3 font-sans p-4">
             I am currently in search of my next challenge. Among my many
             interests, I am currently most interested in full stack web
             development.
