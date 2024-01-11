@@ -3,11 +3,9 @@ import { FaEnvelope } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import Logo from "/src/logo.png";
 
-import { useEffect } from "react";
-
 function Welcome() {
   return (
-    <div className="bg-600 w-screen h-screen text-center align-start justify-center items-center grid grid-cols-1 m-auto">
+    <div className="bg-600 w-screen h-screen text-center justify-center items-center grid grid-cols-1 m-auto">
       <div className="flex align-top h-fit w-fit mt-0 p-1 absolute top-0 left-0">
         <img
           src={Logo}
@@ -22,7 +20,7 @@ function Welcome() {
           <p className="text-4xl font-bold font-serif text-50 sm:px-1">
             Colton Spurgin
           </p>
-          <p className=" text-200 font-sans text-lg indent-28">
+          <p className=" text-200 font-sans text-lg text-right">
             {" "}
             and I like to build things.
           </p>
