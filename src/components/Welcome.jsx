@@ -1,7 +1,8 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import Logo from "/src/logo.png";
+import Logo from "../../public/logo.png";
+import { Link } from "react-router-dom";
 
 function Welcome() {
   return (
@@ -12,6 +13,7 @@ function Welcome() {
           className="justify-start align-start items-start"
           height={50}
           width={50}
+          alt="logo"
         ></img>
       </div>
       <div className="w-fit flex mx-auto p-4 flex-col gap-1">
@@ -33,12 +35,12 @@ function Welcome() {
           </p>
         </div>
         <div className="flex pt-3 sm:px-1 justify-center">
-          <a href="https://bork.coltonspurgin.tech/">
+          <Link to="/Repos">
             {/* button sucks */}
             <button className="pt-3 btn bg-200 hover:bg-400 text-900 font-bold py-2 px-4 rounded">
               Take a look at my work!
             </button>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="absolute flex bottom-0 align-baseline p-1 w-screen sm:pb-6">
