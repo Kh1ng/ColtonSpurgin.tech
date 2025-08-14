@@ -8,14 +8,6 @@ import LLM from '../assets/LLM.png'
 
 const projects = [
 	{
-		title: 'This Website',
-		description: 'Personal website built with Vite, React, and Tailwind.',
-		repo: 'https://github.com/Kh1ng/ColtonSpurgin.tech',
-		demo: '/',
-		screenshots: [logo],
-		tech: ['React', 'Vite', 'Tailwind'],
-	},
-	{
 		title: 'Bork',
 		description: `A dog themed twitter clone built using TypeScript, NextJS, and Tailwind. Migrated between
         multiple database and authentication providers as free/hobby tiers changed.`,
@@ -26,7 +18,8 @@ const projects = [
 	},
     {
         title: 'VeLLM',
-        description: 'A client for use with self hosted Ollama models.',
+        description: `A tauri based cross platform client for use with self hosted Ollama models. 
+        Still a work in progress`,
         repo: 'https://github.com/Kh1ng/VeLLM',
         // demo: 'https://VeLLM.coltonspurgin.tech',
         screenshots: [LLM],
@@ -36,9 +29,7 @@ const projects = [
         title: 'Traveling Salesman Problem Benchmarks',
         description: `Designed and implemented a benchmarking framework in C++ to compare multiple algorithmic 
         approaches to the Traveling Salesman Problem. Evaluated exact and heuristic solutions for performance, 
-        scalability, and accuracy across varying dataset sizes. Delivered a formal report detailing methodology, 
-        time complexity analysis, and performance trade-offs, providing actionable insights on algorithm 
-        selection for real-world optimization problems.`,
+        scalability, and accuracy then compiled into a formal report found under the live demo.`,
         repo: 'https://github.com/Kh1ng/TSP',
         demo: '/travelingsalesman',
         screenshots: [CarbonTSP],
@@ -46,12 +37,20 @@ const projects = [
     },
     {
         title: 'Home Lab',
-        description: 'Ansible Automation for my Personal Home Lab.',
-        repo: 'https://github.com/Kh1ng/another-example',
+        description: 'Ansible Automation for my Home Lab, private repos at the moment.',
+        // repo: 'https://github.com/Kh1ng/another-example',
         // demo: 'https://another-example.com',
         screenshots: [Network],
         tech: ['Ansible', 'Proxmox', 'Docker', 'Linux'],
-    }
+    },
+    {
+		title: 'This Website',
+		description: 'Personal website built with Vite, React, and Tailwind.',
+		repo: 'https://github.com/Kh1ng/ColtonSpurgin.tech',
+		demo: '/',
+		screenshots: [logo],
+		tech: ['React', 'Vite'],
+	},
 ]
 
 export default function Projects() {

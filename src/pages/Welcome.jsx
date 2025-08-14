@@ -45,7 +45,7 @@ function Welcome() {
             </a>
           </div>
           <div className="social-item">
-            <a href="mailto:colton.spurgin1@gmail.com">
+            <a href="mailto:colton@coltonspurgin.tech">
               <FaEnvelope size={42} />
             </a>
           </div>
