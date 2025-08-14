@@ -4,6 +4,8 @@ import logo from '../assets/logo.png'
 import CarbonTSP from '../assets/CarbonTSP.png'
 import BorkIcon from '../assets/bork.ico'
 import Network from '../assets/network.png'
+import LLM from '../assets/LLM.png'
+
 const projects = [
 	{
 		title: 'This Website',
@@ -27,7 +29,7 @@ const projects = [
         description: 'A client for use with self hosted Ollama models.',
         repo: 'https://github.com/Kh1ng/VeLLM',
         // demo: 'https://VeLLM.coltonspurgin.tech',
-        screenshots: [logo],
+        screenshots: [LLM],
         tech: ['React', 'Vite', 'Tailwind', 'Tauri', 'Rust', 'iOS'],
     },
     {
@@ -54,19 +56,17 @@ const projects = [
 
 export default function Projects() {
 	return (
-		<main className="max-w-6xl mx-auto px-4 py-8">
-			<header className="mb-6">
-				<h1 className="text-3xl font-bold">Projects</h1>
-				<p className="text-gray-600 dark:text-gray-300">
-                    A selection of projects — click through for source or live demos.
-                </p>
-			</header>
+        <main className="projects-container">
+            <header className="projects-header">
+                <h1 className="page-title">Projects</h1>
+                <p className="page-subtitle">A selection of projects — click through for source or live demos.</p>
+            </header>
 
-			<section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-				{projects.map((p) => (
-					<ProjectCard key={p.title} {...p} />
-				))}
-			</section>
-		</main>
+            <section className="projects-grid">
+                {projects.map((p) => (
+                    <ProjectCard key={p.title} {...p} />
+                ))}
+            </section>
+        </main>
 	)
 }
