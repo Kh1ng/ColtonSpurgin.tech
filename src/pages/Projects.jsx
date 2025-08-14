@@ -3,7 +3,7 @@ import ProjectCard from '../components/ProjectCard'
 import logo from '../assets/logo.png'
 import CarbonTSP from '../assets/CarbonTSP.png'
 import BorkIcon from '../assets/bork.ico'
-import Network from '../assets/network.png'
+import Network from '../assets/Network.png'
 import LLM from '../assets/LLM.png'
 
 const projects = [
