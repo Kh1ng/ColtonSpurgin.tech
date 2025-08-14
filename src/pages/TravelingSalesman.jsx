@@ -19,16 +19,15 @@ export default function TravelingSalesman() {
                     minimizing total travel distance.
                 </p>
                 <p>
-                    Brute force solutions become impractical as N increases due to <strong>factorial
-                    complexity (O(N!))</strong>, making heuristic approaches like Genetic Algorithms
-                    (GA) essential for larger datasets. I found it interesting that brute force was
-                    faster for the smallest datasets; mistakes become likely as datasets grow.
+                    Brute force solutions become impractical as N increases due to factorial
+                    complexity (O(N!)), making nondeterministic approaches like Genetic Algorithms
+                    essential for larger datasets.
                 </p>
-                <p>This project implements <strong>both approaches</strong> and compares their performance.</p>
+                <p>This project implements both approaches and compares their performance.</p>
             </section>
 
             <section className="ts-section">
-                <h2>The Methods</h2>
+                <h2>Methodology</h2>
                 <h3>Brute Force Approach</h3>
                 <ul>
                     <li>Checks all possible routes and selects the shortest.</li>
@@ -100,7 +99,7 @@ export default function TravelingSalesman() {
             </section>
 
             <section className="ts-section">
-                <h2>Key Observations</h2>
+                <h2>Observations</h2>
                 <ul>
                     <li>Brute Force is not optimal for scale: faster for N &lt; 5, but breaks at N = 12+.</li>
                     <li>GA scales efficiently: solves N = 20 in ~6 sec instead of centuries.</li>
