@@ -26,7 +26,7 @@ function Welcome() {
         </div>
 
         <div className="actions">
-          <a href="/projects">
+          <a href="#/projects">
             <button className="btn btn-primary">Take a look at my work!</button>
           </a>
         </div>

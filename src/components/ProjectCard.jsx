@@ -13,7 +13,13 @@ export default function ProjectCard({
 
   return (
     <article className="project-card">
-      <a href={demo || repo || '#'} target="_blank" rel="noreferrer" className="project-cover">
+      {/* if demo is an internal path (starts with /), convert to hash route so GitHub Pages works */}
+      <a
+        href={demo && demo.startsWith('/') ? `#${demo}` : (demo || repo || '#')}
+        target={demo && demo.startsWith('/') ? undefined : '_blank'}
+        rel={demo && demo.startsWith('/') ? undefined : 'noreferrer'}
+        className="project-cover"
+      >
         <img src={cover} alt={`${title} screenshot`} className="project-cover-img" />
       </a>
 
@@ -29,7 +35,14 @@ export default function ProjectCard({
 
         <div className="project-actions">
           {demo && (
-            <a href={demo} target="_blank" rel="noreferrer" className="btn btn-live">Live</a>
+            <a
+              href={demo && demo.startsWith('/') ? `#${demo}` : demo}
+              target={demo && demo.startsWith('/') ? undefined : '_blank'}
+              rel={demo && demo.startsWith('/') ? undefined : 'noreferrer'}
+              className="btn btn-live"
+            >
+              Live
+            </a>
           )}
 
           {repo && (
