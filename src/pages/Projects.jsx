@@ -20,7 +20,7 @@ const projects = [
         title: 'VeLLM',
         description: `A tauri based cross platform client for use with self hosted Ollama models. 
         Still a work in progress`,
-        repo: 'https://github.com/Kh1ng/VeLLM',
+        repo: 'https://github.com/Kh1ng/llm-chat',
         // demo: 'https://VeLLM.coltonspurgin.tech',
         screenshots: [LLM],
         tech: ['React', 'Vite', 'Tailwind', 'Tauri', 'Rust', 'iOS'],
