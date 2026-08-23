@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T17:33:42Z",
+  "title": "Design System: Colton Spurgin Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "deep-navy": { "role": "neutral", "displayName": "Deep Navy", "canonical": "#020d1b", "tonalRamp": ["oklch(15% 0.025 252)", "oklch(25% 0.024 252)", "oklch(35% 0.022 252)", "oklch(47% 0.019 252)", "oklch(60% 0.016 252)", "oklch(72% 0.013 252)", "oklch(84% 0.009 252)", "oklch(95% 0.004 252)"] },
+      "slate-navy": { "role": "neutral", "displayName": "Slate Navy", "canonical": "#121c2a", "tonalRamp": ["oklch(15% 0.022 252)", "oklch(25% 0.024 252)", "oklch(35% 0.023 252)", "oklch(47% 0.021 252)", "oklch(60% 0.018 252)", "oklch(72% 0.014 252)", "oklch(84% 0.009 252)", "oklch(95% 0.004 252)"] },
+      "cool-white": { "role": "neutral", "displayName": "Cool White", "canonical": "#edf1f4", "tonalRamp": ["oklch(15% 0.006 240)", "oklch(25% 0.007 240)", "oklch(35% 0.008 240)", "oklch(47% 0.008 240)", "oklch(60% 0.007 240)", "oklch(72% 0.006 240)", "oklch(84% 0.005 240)", "oklch(95% 0.003 240)"] },
+      "cool-gray": { "role": "neutral", "displayName": "Cool Gray", "canonical": "#9aa4a9", "tonalRamp": ["oklch(15% 0.012 225)", "oklch(25% 0.014 225)", "oklch(35% 0.015 225)", "oklch(47% 0.016 225)", "oklch(60% 0.015 225)", "oklch(72% 0.013 225)", "oklch(84% 0.009 225)", "oklch(95% 0.004 225)"] },
+      "quiet-teal": { "role": "primary", "displayName": "Quiet Teal", "canonical": "#9fd3d4", "tonalRamp": ["oklch(15% 0.04 196)", "oklch(25% 0.06 196)", "oklch(35% 0.075 196)", "oklch(47% 0.09 196)", "oklch(60% 0.095 196)", "oklch(72% 0.08 196)", "oklch(84% 0.05 196)", "oklch(95% 0.018 196)"] },
+      "signal-teal": { "role": "primary", "displayName": "Signal Teal", "canonical": "#7fc3bf", "tonalRamp": ["oklch(15% 0.045 185)", "oklch(25% 0.065 185)", "oklch(35% 0.08 185)", "oklch(47% 0.095 185)", "oklch(60% 0.1 185)", "oklch(72% 0.085 185)", "oklch(84% 0.055 185)", "oklch(95% 0.02 185)"] },
+      "blue-gray-line": { "role": "neutral", "displayName": "Blue-Gray Line", "canonical": "#2f3946", "tonalRamp": ["oklch(15% 0.015 250)", "oklch(25% 0.018 250)", "oklch(35% 0.019 250)", "oklch(47% 0.019 250)", "oklch(60% 0.017 250)", "oklch(72% 0.014 250)", "oklch(84% 0.009 250)", "oklch(95% 0.004 250)"] },
+      "teal-wash": { "role": "primary", "displayName": "Teal Wash", "canonical": "rgba(127, 195, 191, 0.075)", "tonalRamp": ["oklch(15% 0.04 185)", "oklch(25% 0.055 185)", "oklch(35% 0.07 185)", "oklch(47% 0.08 185)", "oklch(60% 0.08 185)", "oklch(72% 0.065 185)", "oklch(84% 0.04 185)", "oklch(95% 0.015 185)"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Report title and the smaller profile name treatment." },
+      "profile-name": { "displayName": "Profile Name", "purpose": "Colton Spurgin in the persistent profile field." },
+      "headline": { "displayName": "Headline", "purpose": "Portfolio and report section headings." },
+      "report-headline": { "displayName": "Report Headline", "purpose": "Second-level headings in the Traveling Salesman report." },
+      "report-subhead": { "displayName": "Report Subhead", "purpose": "Method names and other third-level report headings." },
+      "title": { "displayName": "Title", "purpose": "Experience titles, project titles, and table headers." },
+      "body": { "displayName": "Body", "purpose": "Biography, project descriptions, and report copy." },
+      "profile-role": { "displayName": "Profile Role", "purpose": "The three-role descriptor below the profile name." },
+      "intro-body": { "displayName": "Introduction Body", "purpose": "Responsive biography and contact copy on the portfolio route." },
+      "experience-body": { "displayName": "Experience Body", "purpose": "Expanded role descriptions." },
+      "email-link": { "displayName": "Email Link", "purpose": "The prominent direct email address in the contact section." },
+      "label": { "displayName": "Label", "purpose": "Supporting row copy, work links, and captions." },
+      "technology-label": { "displayName": "Technology Label", "purpose": "Compact technology lines in work rows." },
+      "footer": { "displayName": "Footer", "purpose": "Name and update metadata at the end of the portfolio record." }
+    },
+    "motion": [
+      { "name": "interaction", "value": "180ms ease", "purpose": "Color, line, transform, and wash changes. Reduced-motion preferences collapse transitions to 0.01ms." }
+    ],
+    "breakpoints": [
+      { "name": "single-field", "value": "900px" },
+      { "name": "work-row-single-column", "value": "640px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Section Navigation Link",
+      "kind": "nav",
+      "refersTo": "navigation-link-active",
+      "description": "A 44px-tall portfolio anchor with a hairline current-section signal.",
+      "html": "<a class=\"ds-section-link\" href=\"#interests\" aria-current=\"location\">Interests</a>",
+      "css": ".ds-section-link { display: inline-flex; min-height: 44px; align-items: center; color: var(--muted, #9aa4a9); text-decoration: none; transition: color 180ms ease; } .ds-section-link::before { width: 1.5rem; height: 1px; margin-right: .85rem; background: var(--line, #2f3946); content: ''; transition: background 180ms ease, width 180ms ease; } .ds-section-link:hover, .ds-section-link:focus-visible, .ds-section-link[aria-current='location'] { color: var(--text, #edf1f4); } .ds-section-link:hover::before, .ds-section-link:focus-visible::before, .ds-section-link[aria-current='location']::before { width: 2.4rem; background: var(--accent, #9fd3d4); } .ds-section-link:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Social Link",
+      "kind": "nav",
+      "description": "An unboxed line icon and label for professional profiles and email.",
+      "html": "<a class=\"ds-social-link\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 4h16v16H4zM4 7l8 6 8-6\" /></svg><span>Email</span></a>",
+      "css": ".ds-social-link { display: inline-flex; min-height: 44px; align-items: center; gap: .55rem; color: var(--muted, #9aa4a9); text-decoration: none; transition: color 180ms ease; } .ds-social-link svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: currentColor; stroke-width: 1.5; } .ds-social-link:hover, .ds-social-link:focus-visible { color: var(--text, #edf1f4); } .ds-social-link:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Experience Row",
+      "kind": "custom",
+      "refersTo": "experience-row",
+      "description": "A factual role with a thin teal icon and short supporting line.",
+      "html": "<article class=\"ds-experience-row\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><polyline points=\"16 18 22 12 16 6\"></polyline><polyline points=\"8 6 2 12 8 18\"></polyline></svg><div><h3>Lead software developer intern</h3><p>Architecture, implementation, and coordination.</p></div></article>",
+      "css": ".ds-experience-row { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: 1.1rem; padding: 1rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-experience-row:hover { background: var(--wash, rgba(127,195,191,.075)); } .ds-experience-row > svg { width: 1.45rem; height: 1.45rem; margin-top: .18rem; fill: none; stroke: var(--accent, #9fd3d4); stroke-width: 1.5; } .ds-experience-row h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-experience-row p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); font-size: .96rem; line-height: 1.6; }"
+    },
+    {
+      "name": "Work Row",
+      "kind": "custom",
+      "refersTo": "work-row",
+      "description": "A text-first project record with a summary, technology line, and links.",
+      "html": "<article class=\"ds-work-row\"><div class=\"ds-work-copy\"><h3>Git Agent Harness</h3><p>A Rust CLI and control plane for running coding agents against real repositories.</p><span>Rust · TypeScript · React · SQLite</span></div><a href=\"#\">Source</a></article>",
+      "css": ".ds-work-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.25rem; align-items: center; padding: 1.6rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-work-row:hover, .ds-work-row:focus-within { background: var(--wash, rgba(127,195,191,.075)); } .ds-work-copy h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-work-copy p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); } .ds-work-copy span { display: block; margin-top: .6rem; color: var(--accent-strong, #7fc3bf); font-size: .82rem; } .ds-work-row > a { display: inline-flex; min-height: 44px; align-items: center; color: var(--accent, #9fd3d4); font-size: .9rem; } .ds-work-row > a:hover { color: var(--text, #edf1f4); } .ds-work-row > a:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Report Table",
+      "kind": "custom",
+      "description": "A flat benchmark table with tabular numerals and horizontal overflow support.",
+      "html": "<div class=\"ds-table-wrap\"><table class=\"ds-table\"><caption>Runtime by number of cities</caption><thead><tr><th>Cities</th><th>Genetic algorithm</th><th>Brute force</th></tr></thead><tbody><tr><td>10</td><td>1413 ms</td><td>449 ms</td></tr><tr><td>20</td><td>6057 ms</td><td>Estimated 700+ years</td></tr></tbody></table></div>",
+      "css": ".ds-table-wrap { overflow-x: auto; border-top: 1px solid var(--line, #2f3946); } .ds-table { width: 100%; min-width: 32rem; border-collapse: collapse; color: var(--muted, #9aa4a9); font-variant-numeric: tabular-nums; } .ds-table caption { padding: .85rem 0; color: var(--muted, #9aa4a9); text-align: left; } .ds-table th, .ds-table td { padding: .8rem .9rem .8rem 0; border-bottom: 1px solid var(--line, #2f3946); text-align: left; } .ds-table th { color: var(--text, #edf1f4); font-weight: 600; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Canon Portfolio",
+    "overview": "The system presents Colton as a record of current work and roles, not a campaign. A slate profile field fixes identity and navigation beside a deep navy reading field on desktop. Mobile restores one continuous document. Factual copy, text-first work records, and hairline separators carry the hierarchy without a logo, slogan, or card grid.\n\nColor and state changes stay quiet. Teal marks links, metadata, icons, and current navigation. Rows receive a faint teal wash on hover or focus. The result is dark, confident, and structural without turning the portfolio into a themed interface.",
+    "keyCharacteristics": [
+      "Two flat navy fields form the desktop split.",
+      "A system sans type ramp keeps biography, work, and technical reporting in one voice.",
+      "Hairline dividers and tonal shifts replace shadows and floating containers.",
+      "Teal appears as a state signal, not decoration.",
+      "Text-first work records keep systems projects legible without forced thumbnails."
+    ],
+    "rules": [
+      { "name": "The Signal State Rule", "body": "Use teal for identity, links, metadata, icons, and interactive state. Keep the navy fields dominant and do not introduce a competing accent.", "section": "colors" },
+      { "name": "The One Sans System Rule", "body": "Let every route inherit the root system stack. Create hierarchy with size, weight, spacing, and color instead of adding another typeface.", "section": "typography" },
+      { "name": "The Two-Field Rule", "body": "Use one flat field for durable identity and one for the changing record. On narrow screens, keep their order and let both fields return to normal document flow.", "section": "layout" },
+      { "name": "The Flat Record Rule", "body": "Separate content with field color, hairlines, and spacing. Do not use gradients, shadows, or lifted cards.", "section": "elevation" },
+      { "name": "The Plain Evidence Rule", "body": "Present systems work through precise descriptions, technology labels, and direct links. Add imagery only when the project has a useful visual artifact.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do keep the profile and record as flat, adjacent fields on desktop.",
+      "Do use hairlines, spacing, and a faint teal wash to explain hierarchy and state.",
+      "Do keep project evidence text-first and tied to source code or a useful report.",
+      "Do use ordinary labels and direct self-representation throughout the portfolio."
+    ],
+    "donts": [
+      "Don't add a logo, slogan, promotional hero, or generic call to action.",
+      "Don't turn experience or work rows into rounded floating cards.",
+      "Don't add shadows, gradients, neon, glass, or a themed interface.",
+      "Don't use teal as a broad fill when a line, icon, or text state is enough.",
+      "Don't force a thumbnail onto software that has no useful visual artifact."
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "title": "Choose the visual world",
+  "question": "Which version feels most like an honest record of who Colton is and what he has done?",
+  "options": [
+    {
+      "id": "assigned-field-archive",
+      "label": "Field Archive",
+      "kicker": "THE ROLL",
+      "lineage": "field notebooks, museum specimen labels, and working archives",
+      "thesis": "A life in progress reconstructed from evidence instead of sales claims.",
+      "palette": ["#e8e1d2", "#252821", "#a84b32", "#6b725f"],
+      "materials": ["uncoated paper", "typed labels", "graphite annotations"],
+      "viewport": "One continuous evidence table: identity first, then service, software, research, and selected work.",
+      "risk": "Can feel overly academic if the personal voice disappears.",
+      "raised": [
+        {"from": "Jackfield Normalling Schedule", "raise": "Every artifact gets a precise index and state."},
+        {"from": "Raku Vessel", "raise": "Visible imperfection makes the record feel lived-in, not manufactured."},
+        {"from": "Weimar Bill", "raise": "The opening statement owns the page with total hierarchy."}
+      ],
+      "comp": ".impeccable/mocks/decision/assigned-field-archive.webp"
+    },
+    {
+      "id": "model-pick-flight-debrief",
+      "label": "Flight-Test Debrief",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "flight-test reports, after-action reviews, and engineering postmortems",
+      "thesis": "Leadership and engineering share one operating record: objective, evidence, result, next move.",
+      "palette": ["#eee9dc", "#182026", "#c65335", "#7e8e91"],
+      "materials": ["onion-skin report paper", "instrument lines", "red-pencil review marks"],
+      "viewport": "A decisive opening brief above a chronological record of service, software, research, and projects.",
+      "risk": "Military language can overpower the software and research story.",
+      "comp": ".impeccable/mocks/decision/model-pick-flight-debrief.webp"
+    },
+    {
+      "id": "challenger-daylight-section",
+      "label": "Daylight Section",
+      "verdict": "competitive",
+      "lineage": "architectural sections and environmental analysis drawings",
+      "thesis": "One continuous cutaway shows how leadership, study, research, and building fit together.",
+      "palette": ["#f2efea", "#1c1f22", "#d6a43a", "#5b6b7c"],
+      "materials": ["limewash paper", "section ink", "measured annotations"],
+      "viewport": "A horizontal career section crosses the fold, with projects and roles occupying distinct rooms.",
+      "case": "It explains the whole story cleanly, but identifies less strongly with one actual person.",
+      "risk": "Precision can read as distant or overly polished.",
+      "comp": ".impeccable/mocks/decision/challenger-daylight-section.webp",
+      "hero": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/architecture-inhabitable-space-daylight-section.webp"
+    },
+    {
+      "id": "challenger-fletcher-poster",
+      "label": "Cut-Paper Self-Portrait",
+      "verdict": "competitive",
+      "lineage": "Alan Fletcher posters, cut paper, and crayon annotation",
+      "thesis": "A plainspoken self-portrait uses tactile fragments to show the human behind the résumé.",
+      "palette": ["#f5eedc", "#171717", "#1758b6", "#d84935", "#4d9848"],
+      "materials": ["torn paper", "wax crayon", "marker lettering"],
+      "viewport": "A bold personal statement sits beside four handmade evidence fragments for service, code, research, and study.",
+      "case": "It feels candid and unmistakably human, but loses narrowly on trust and long-term extensibility.",
+      "risk": "The playfulness can undersell senior responsibility.",
+      "comp": ".impeccable/mocks/decision/challenger-fletcher-poster.webp",
+      "hero": "https://impeccable.style/worlds/cards/brand-identity-canon-fletcher-wit-poster-hero.webp",
+      "board": "https://impeccable.style/worlds/cards/brand-identity-canon-fletcher-wit-poster.webp"
+    },
+    {
+      "id": "challenger-jackfield",
+      "label": "Jackfield Schedule",
+      "verdict": "declined",
+      "lineage": "telephone exchange normalling schedules",
+      "thesis": "A black-glass operating board maps roles and projects as active circuits.",
+      "palette": ["#11100d", "#d5932f", "#d7d0bd"],
+      "materials": ["black glass", "engraved brass", "amber lamps"],
+      "viewport": "Indexed lanes route the visitor through work, service, and research.",
+      "case": "The structure is excellent, but the control-room aesthetic misrepresents the person.",
+      "kept": "Precise indexing and visible states.",
+      "risk": "Reads as a themed interface rather than a candid portfolio."
+    },
+    {
+      "id": "challenger-teletext",
+      "label": "Teletext Index",
+      "verdict": "declined",
+      "lineage": "broadcast teletext magazines",
+      "thesis": "A direct numbered index makes every fact one keypress away.",
+      "palette": ["#0000a8", "#ffff00", "#00a84f", "#ffffff"],
+      "materials": ["block mosaic", "phosphor glow"],
+      "viewport": "Page 100 introduces Colton; numbered pages open the evidence.",
+      "case": "The navigation is direct, but the retro-computer joke would become the subject.",
+      "kept": "Direct address and ruthless index discipline.",
+      "risk": "Feels gimmicky and hacker-coded."
+    },
+    {
+      "id": "challenger-raku",
+      "label": "Raku Record",
+      "verdict": "declined",
+      "lineage": "raku pottery and repaired working vessels",
+      "thesis": "A dark material record treats growth and imperfection as evidence.",
+      "palette": ["#171513", "#a5a099", "#c75d35"],
+      "materials": ["smoke-black ceramic", "silver crazing", "ember glaze"],
+      "viewport": "A quiet dark field holds a few carefully lit career fragments.",
+      "case": "The honesty fits, but the metaphor does not explain software, leadership, or research.",
+      "kept": "Material truth and visible imperfection.",
+      "risk": "Becomes an art portfolio with facts attached."
+    },
+    {
+      "id": "challenger-weimar",
+      "label": "Weimar Bill",
+      "verdict": "declined",
+      "lineage": "Weimar cabaret bills and typographic broadsides",
+      "thesis": "A loud public bill makes the personal statement impossible to miss.",
+      "palette": ["#f0cf21", "#111111", "#d54731"],
+      "materials": ["cheap newsprint", "display ink", "overprint"],
+      "viewport": "One huge statement dominates above tightly packed evidence columns.",
+      "case": "The hierarchy is fearless, but the performance fights the requested quiet confidence.",
+      "kept": "Total hierarchy and commitment.",
+      "risk": "Signals spectacle before trust."
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "comp", "toggle": true},
+  "canon": true,
+  "canonCard": {
+    "label": "Conventional portfolio",
+    "thesis": "A polished hero, project grid, résumé timeline, and contact block executed cleanly.",
+    "palette": ["#ffffff", "#111827", "#2563eb"],
+    "materials": ["clean grid", "project screenshots"],
+    "viewport": "Name and title above a familiar project-card grid.",
+    "risk": "Easy to understand, easy to forget.",
+    "comp": ".impeccable/mocks/decision/canon-portfolio.webp"
+  },
+  "steer": true
+}

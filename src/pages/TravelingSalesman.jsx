@@ -1,11 +1,11 @@
 import React from 'react'
+import { FiArrowLeft } from 'react-icons/fi'
 import TSPChart from '../assets/TSPChart.png'
 
 export default function TravelingSalesman() {
-    const TravelingSalesmanChart = TSPChart 
-
     return (
         <main className="ts-container">
+            <a className="ts-back" href="#/"><FiArrowLeft aria-hidden="true" />Back to portfolio</a>
             <header className="ts-header">
                 <h1>Traveling Salesman Problem</h1>
                 <p className="ts-meta">Colton Spurgin — March 2, 2025</p>
@@ -19,9 +19,9 @@ export default function TravelingSalesman() {
                     minimizing total travel distance.
                 </p>
                 <p>
-                    Brute force solutions become impractical as N increases due to factorial
-                    complexity (O(N!)), making nondeterministic approaches like Genetic Algorithms
-                    essential for larger datasets.
+                    Brute force becomes impractical as N increases because its work grows factorially
+                    (O(N!)). Heuristics such as genetic algorithms trade guaranteed optimality for
+                    results that remain practical on larger datasets.
                 </p>
                 <p>This project implements both approaches and compares their performance.</p>
             </section>
@@ -31,7 +31,7 @@ export default function TravelingSalesman() {
                 <h3>Brute Force Approach</h3>
                 <ul>
                     <li>Checks all possible routes and selects the shortest.</li>
-                    <li>Guarantees optimality but scales <strong>exponentially (O(N!))</strong>.</li>
+                    <li>Guarantees optimality but scales <strong>factorially (O(N!))</strong>.</li>
                     <li>Feasible for around N ≤ 10, but impractical beyond that.</li>
                 </ul>
 
@@ -56,65 +56,66 @@ export default function TravelingSalesman() {
             <section className="ts-section">
                 <h2>Results and Performance Comparison</h2>
 
-                <table className="ts-table">
-                    <thead>
-                        <tr>
-                            <th>Data Size</th>
-                            <th>Genetic</th>
-                            <th>Brute Force</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {[
-                            ['3','140 ms','0 ms'],
-                            ['4','250 ms','0 ms'],
-                            ['5','363 ms','0 ms'],
-                            ['6','473 ms','0 ms'],
-                            ['7','701 ms','1 ms'],
-                            ['8','911 ms','5 ms'],
-                            ['9','1145 ms','47 ms'],
-                            ['10','1413 ms','449 ms'],
-                            ['11','1664 ms','5492 ms'],
-                            ['12','1978 ms','67490 ms'],
-                            ['15','2349 ms','(3+ Hours)'],
-                            ['16','3569 ms','X'],
-                            ['17','4150 ms','X'],
-                            ['18','4762 ms','X'],
-                            ['19','5413 ms','X'],
-                            ['20','6057 ms','(Est. 700+ Years)'],
-                        ].map((row) => (
-                            <tr key={row[0]}>
-                                <td className="ts-td">{row[0]}</td>
-                                <td className="ts-td">{row[1]}</td>
-                                <td className="ts-td">{row[2]}</td>
+                <div className="ts-table-wrap">
+                    <table className="ts-table">
+                        <caption>Runtime by number of cities</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Cities</th>
+                                <th scope="col">Genetic algorithm</th>
+                                <th scope="col">Brute force</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {[
+                                ['3','140 ms','0 ms'],
+                                ['4','250 ms','0 ms'],
+                                ['5','363 ms','0 ms'],
+                                ['6','473 ms','0 ms'],
+                                ['7','701 ms','1 ms'],
+                                ['8','911 ms','5 ms'],
+                                ['9','1145 ms','47 ms'],
+                                ['10','1413 ms','449 ms'],
+                                ['11','1664 ms','5492 ms'],
+                                ['12','1978 ms','67490 ms'],
+                                ['15','2349 ms','3+ hours'],
+                                ['16','3569 ms','Not run'],
+                                ['17','4150 ms','Not run'],
+                                ['18','4762 ms','Not run'],
+                                ['19','5413 ms','Not run'],
+                                ['20','6057 ms','Estimated 700+ years'],
+                            ].map((row) => (
+                                <tr key={row[0]}>
+                                    <td>{row[0]}</td>
+                                    <td>{row[1]}</td>
+                                    <td>{row[2]}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
 
                 <div className="ts-chart">
-                    <p>Chart:</p>
-                    <img src={TravelingSalesmanChart} alt="TSP run chart" className="ts-chart-img" />
+                    <img src={TSPChart} alt="Runtime comparison for the Traveling Salesman benchmark" className="ts-chart-img" loading="lazy" />
                 </div>
             </section>
 
             <section className="ts-section">
                 <h2>Observations</h2>
                 <ul>
-                    <li>Brute Force is not optimal for scale: faster for N &lt; 5, but breaks at N = 12+.</li>
-                    <li>GA scales efficiently: solves N = 20 in ~6 sec instead of centuries.</li>
-                    <li>Trade-off: GA doesn’t guarantee absolute optimality but finds near-optimal solutions in reasonable time.</li>
+                    <li>Brute force is faster on the smallest inputs, but runtime becomes impractical after 12 cities.</li>
+                    <li>The genetic algorithm completes the 20-city run in about six seconds.</li>
+                    <li>The trade-off is accuracy: the genetic algorithm can find a strong route without guaranteeing the optimum.</li>
                 </ul>
             </section>
 
             <section className="ts-section">
                 <h2>Conclusion</h2>
                 <ul>
-                    <li>Brute Force is only viable for N ≤ 10; beyond that it becomes impractical.</li>
-                    <li>Genetic Algorithm provides a scalable, efficient alternative, solving 20-city TSP in seconds instead of centuries.</li>
+                    <li>Brute force is useful when the input is small enough to exhaust every route.</li>
+                    <li>The genetic algorithm remains practical as the input grows, with no guarantee that its route is optimal.</li>
                 </ul>
             </section>
         </main>
     )
 }
-
