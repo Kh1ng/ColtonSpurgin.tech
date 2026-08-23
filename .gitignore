@@ -5,6 +5,7 @@
 /out-tsc
 /bazel-out
 /dist
+/.impeccable/questions/
 
 # Node
 /node_modules

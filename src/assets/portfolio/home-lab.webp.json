@@ -1,0 +1,4 @@
+{
+  "prompt": "Origin: src/assets/Network.png, HEIF content despite the .png extension. Derivative: HEIF decode, aspect-preserving cover resize with centered crop to 480x270, then WebP encoding at quality 92.",
+  "createdAt": "2026-08-23T15:53:59.699Z"
+}

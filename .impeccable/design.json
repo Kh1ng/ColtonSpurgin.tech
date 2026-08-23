@@ -1,126 +1,110 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-23T14:33:19Z",
+  "generatedAt": "2026-08-23T16:31:00Z",
   "title": "Design System: Colton Spurgin Portfolio",
   "extensions": {
     "colorMeta": {
-      "after-hours-navy": {
-        "role": "neutral",
-        "displayName": "After-Hours Navy",
-        "canonical": "#0B0D12",
-        "tonalRamp": ["oklch(15% 0.015 260)", "oklch(25% 0.014 260)", "oklch(35% 0.013 260)", "oklch(47% 0.012 260)", "oklch(60% 0.01 260)", "oklch(72% 0.008 260)", "oklch(84% 0.006 260)", "oklch(95% 0.003 260)"]
-      },
-      "workbench-surface": {
-        "role": "neutral",
-        "displayName": "Workbench Surface",
-        "canonical": "#151922",
-        "tonalRamp": ["oklch(15% 0.018 260)", "oklch(25% 0.017 260)", "oklch(35% 0.016 260)", "oklch(47% 0.014 260)", "oklch(60% 0.012 260)", "oklch(72% 0.01 260)", "oklch(84% 0.007 260)", "oklch(95% 0.003 260)"]
-      },
-      "workbench-blue": {
-        "role": "primary",
-        "displayName": "Workbench Blue",
-        "canonical": "#3B82F6",
-        "tonalRamp": ["oklch(15% 0.05 255)", "oklch(25% 0.09 255)", "oklch(35% 0.13 255)", "oklch(47% 0.18 255)", "oklch(60% 0.2 255)", "oklch(72% 0.15 255)", "oklch(84% 0.09 255)", "oklch(95% 0.03 255)"]
-      },
-      "instrument-cyan": {
-        "role": "secondary",
-        "displayName": "Instrument Cyan",
-        "canonical": "#06B6D4",
-        "tonalRamp": ["oklch(15% 0.04 210)", "oklch(25% 0.07 210)", "oklch(35% 0.1 210)", "oklch(47% 0.13 210)", "oklch(60% 0.14 210)", "oklch(72% 0.12 210)", "oklch(84% 0.08 210)", "oklch(95% 0.025 210)"]
-      },
-      "task-light": {
-        "role": "neutral",
-        "displayName": "Task Light",
-        "canonical": "#F3F4F6",
-        "tonalRamp": ["oklch(15% 0.006 260)", "oklch(25% 0.006 260)", "oklch(35% 0.006 260)", "oklch(47% 0.005 260)", "oklch(60% 0.005 260)", "oklch(72% 0.004 260)", "oklch(84% 0.003 260)", "oklch(95% 0.002 260)"]
-      },
-      "cool-steel": {
-        "role": "neutral",
-        "displayName": "Cool Steel",
-        "canonical": "#9CA3AF",
-        "tonalRamp": ["oklch(15% 0.01 260)", "oklch(25% 0.012 260)", "oklch(35% 0.014 260)", "oklch(47% 0.016 260)", "oklch(60% 0.018 260)", "oklch(72% 0.016 260)", "oklch(84% 0.011 260)", "oklch(95% 0.004 260)"]
-      }
+      "deep-navy": { "role": "neutral", "displayName": "Deep Navy", "canonical": "#020d1b", "tonalRamp": ["oklch(15% 0.025 252)", "oklch(25% 0.024 252)", "oklch(35% 0.022 252)", "oklch(47% 0.019 252)", "oklch(60% 0.016 252)", "oklch(72% 0.013 252)", "oklch(84% 0.009 252)", "oklch(95% 0.004 252)"] },
+      "slate-navy": { "role": "neutral", "displayName": "Slate Navy", "canonical": "#121c2a", "tonalRamp": ["oklch(15% 0.022 252)", "oklch(25% 0.024 252)", "oklch(35% 0.023 252)", "oklch(47% 0.021 252)", "oklch(60% 0.018 252)", "oklch(72% 0.014 252)", "oklch(84% 0.009 252)", "oklch(95% 0.004 252)"] },
+      "cool-white": { "role": "neutral", "displayName": "Cool White", "canonical": "#edf1f4", "tonalRamp": ["oklch(15% 0.006 240)", "oklch(25% 0.007 240)", "oklch(35% 0.008 240)", "oklch(47% 0.008 240)", "oklch(60% 0.007 240)", "oklch(72% 0.006 240)", "oklch(84% 0.005 240)", "oklch(95% 0.003 240)"] },
+      "cool-gray": { "role": "neutral", "displayName": "Cool Gray", "canonical": "#9aa4a9", "tonalRamp": ["oklch(15% 0.012 225)", "oklch(25% 0.014 225)", "oklch(35% 0.015 225)", "oklch(47% 0.016 225)", "oklch(60% 0.015 225)", "oklch(72% 0.013 225)", "oklch(84% 0.009 225)", "oklch(95% 0.004 225)"] },
+      "quiet-teal": { "role": "primary", "displayName": "Quiet Teal", "canonical": "#9fd3d4", "tonalRamp": ["oklch(15% 0.04 196)", "oklch(25% 0.06 196)", "oklch(35% 0.075 196)", "oklch(47% 0.09 196)", "oklch(60% 0.095 196)", "oklch(72% 0.08 196)", "oklch(84% 0.05 196)", "oklch(95% 0.018 196)"] },
+      "signal-teal": { "role": "primary", "displayName": "Signal Teal", "canonical": "#7fc3bf", "tonalRamp": ["oklch(15% 0.045 185)", "oklch(25% 0.065 185)", "oklch(35% 0.08 185)", "oklch(47% 0.095 185)", "oklch(60% 0.1 185)", "oklch(72% 0.085 185)", "oklch(84% 0.055 185)", "oklch(95% 0.02 185)"] },
+      "blue-gray-line": { "role": "neutral", "displayName": "Blue-Gray Line", "canonical": "#2f3946", "tonalRamp": ["oklch(15% 0.015 250)", "oklch(25% 0.018 250)", "oklch(35% 0.019 250)", "oklch(47% 0.019 250)", "oklch(60% 0.017 250)", "oklch(72% 0.014 250)", "oklch(84% 0.009 250)", "oklch(95% 0.004 250)"] },
+      "teal-wash": { "role": "primary", "displayName": "Teal Wash", "canonical": "rgba(127, 195, 191, 0.075)", "tonalRamp": ["oklch(15% 0.04 185)", "oklch(25% 0.055 185)", "oklch(35% 0.07 185)", "oklch(47% 0.08 185)", "oklch(60% 0.08 185)", "oklch(72% 0.065 185)", "oklch(84% 0.04 185)", "oklch(95% 0.015 185)"] }
     },
-    "shadows": [
-      {"name": "ambient-surface", "value": "0 6px 18px rgba(0, 0, 0, 0.45)", "purpose": "Separate cards and controls from the dark canvas."},
-      {"name": "interactive-lift", "value": "0 18px 42px rgba(0, 0, 0, 0.55)", "purpose": "Confirm a project card hover."},
-      {"name": "blue-response", "value": "0 10px 26px rgba(37, 99, 235, 0.28)", "purpose": "Confirm a primary action hover."}
-    ],
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Report title and the smaller profile name treatment." },
+      "profile-name": { "displayName": "Profile Name", "purpose": "Colton Spurgin in the persistent profile field." },
+      "headline": { "displayName": "Headline", "purpose": "Portfolio and report section headings." },
+      "report-headline": { "displayName": "Report Headline", "purpose": "Second-level headings in the Traveling Salesman report." },
+      "report-subhead": { "displayName": "Report Subhead", "purpose": "Method names and other third-level report headings." },
+      "title": { "displayName": "Title", "purpose": "Experience titles, project titles, and table headers." },
+      "body": { "displayName": "Body", "purpose": "Biography, project descriptions, and report copy." },
+      "profile-role": { "displayName": "Profile Role", "purpose": "The three-role descriptor below the profile name." },
+      "intro-body": { "displayName": "Introduction Body", "purpose": "Responsive biography and contact copy on the portfolio route." },
+      "email-link": { "displayName": "Email Link", "purpose": "The prominent direct email address in the contact section." },
+      "label": { "displayName": "Label", "purpose": "Supporting row copy, work links, and captions." },
+      "technology-label": { "displayName": "Technology Label", "purpose": "Compact technology lines in work rows." },
+      "footer": { "displayName": "Footer", "purpose": "Name and update metadata at the end of the portfolio record." }
+    },
     "motion": [
-      {"name": "interaction", "value": "180ms ease", "purpose": "Move and elevate interactive elements without calling attention to the animation."}
+      { "name": "interaction", "value": "180ms ease", "purpose": "Color, line, transform, and wash changes. Reduced-motion preferences collapse transitions to 0.01ms." }
     ],
     "breakpoints": [
-      {"name": "phone", "value": "520px"},
-      {"name": "grid-two-column", "value": "640px"},
-      {"name": "compact", "value": "820px"},
-      {"name": "grid-three-column", "value": "1024px"},
-      {"name": "wide", "value": "1280px"}
+      { "name": "single-field", "value": "900px" },
+      { "name": "work-row-two-column", "value": "640px" },
+      { "name": "work-row-single-column", "value": "430px" }
     ]
   },
   "components": [
     {
-      "name": "Primary Button",
-      "kind": "button",
-      "refersTo": "button-primary",
-      "description": "The main action for moving from an introduction to project evidence.",
-      "html": "<button class=\"ds-btn-primary\">VIEW PROJECTS</button>",
-      "css": ".ds-btn-primary { background: linear-gradient(180deg, var(--color-primary, #3B82F6), #266bb8); color: #fff; padding: 10px 17px; border: 0; border-radius: 8px; font: 600 14px Arial, sans-serif; box-shadow: 0 6px 18px rgba(0,0,0,.45); transition: transform 180ms ease, box-shadow 180ms ease; } .ds-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(37,99,235,.28); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; }"
-    },
-    {
-      "name": "Code Button",
-      "kind": "button",
-      "refersTo": "button-code",
-      "description": "A quiet secondary action for opening source code.",
-      "html": "<a class=\"ds-btn-code\" href=\"#\">CODE</a>",
-      "css": ".ds-btn-code { display: inline-block; color: var(--color-text, #F3F4F6); padding: 6px 10px; border: 1px solid rgba(255,255,255,.06); border-radius: 8px; text-decoration: none; font-weight: 600; transition: border-color 180ms ease, color 180ms ease; } .ds-btn-code:hover { color: var(--color-secondary, #06B6D4); border-color: rgba(6,182,212,.35); } .ds-btn-code:focus-visible { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; }"
-    },
-    {
-      "name": "Project Card",
-      "kind": "card",
-      "refersTo": "card-project",
-      "description": "A compact project summary with evidence, technology labels, and actions.",
-      "html": "<article class=\"ds-project-card\"><div class=\"ds-project-image\"></div><div class=\"ds-project-body\"><h3>Project Name</h3><p>A concise description of the problem and completed work.</p><span class=\"ds-project-chip\">React</span></div></article>",
-      "css": ".ds-project-card { width: 280px; overflow: hidden; color: var(--color-text, #F3F4F6); background: var(--color-surface, #151922); border: 1px solid rgba(255,255,255,.04); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.45); transition: transform 180ms ease, box-shadow 180ms ease; } .ds-project-card:hover { transform: translateY(-6px); box-shadow: 0 18px 42px rgba(0,0,0,.55); } .ds-project-card:focus-within { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; } .ds-project-image { height: 112px; background: linear-gradient(135deg, #151922, #3B82F6); } .ds-project-body { padding: 16px; } .ds-project-body h3 { margin: 0 0 8px; font-size: 18px; } .ds-project-body p { margin: 0 0 12px; color: var(--color-text-muted, #9CA3AF); line-height: 1.45; } .ds-project-chip { display: inline-block; padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,.03); font-size: 12px; }"
-    },
-    {
-      "name": "Technology Chip",
-      "kind": "chip",
-      "refersTo": "chip-tech",
-      "description": "A compact label for technology used in a project.",
-      "html": "<span class=\"ds-tech-chip\">TypeScript</span>",
-      "css": ".ds-tech-chip { display: inline-block; color: var(--color-text, #F3F4F6); background: rgba(255,255,255,.03); padding: 4px 8px; border-radius: 999px; font-size: 12px; }"
+      "name": "Section Navigation Link",
+      "kind": "nav",
+      "refersTo": "navigation-link-active",
+      "description": "A 44px-tall portfolio anchor with a hairline current-section signal.",
+      "html": "<a class=\"ds-section-link\" href=\"#about\" aria-current=\"location\">About</a>",
+      "css": ".ds-section-link { display: inline-flex; min-height: 44px; align-items: center; color: var(--muted, #9aa4a9); text-decoration: none; transition: color 180ms ease; } .ds-section-link::before { width: 1.5rem; height: 1px; margin-right: .85rem; background: var(--line, #2f3946); content: ''; transition: background 180ms ease, width 180ms ease; } .ds-section-link:hover, .ds-section-link:focus-visible, .ds-section-link[aria-current='location'] { color: var(--text, #edf1f4); } .ds-section-link:hover::before, .ds-section-link:focus-visible::before, .ds-section-link[aria-current='location']::before { width: 2.4rem; background: var(--accent, #9fd3d4); } .ds-section-link:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
     },
     {
       "name": "Social Link",
       "kind": "nav",
-      "description": "An unboxed icon link for contact and professional profiles.",
-      "html": "<a class=\"ds-social-link\" href=\"#\" aria-label=\"Email\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 5h18v14H3V5Zm2 2v.5l7 5 7-5V7H5Zm14 10V9.9l-7 5-7-5V17h14Z\"/></svg></a>",
-      "css": ".ds-social-link { display: inline-flex; width: 42px; height: 42px; align-items: center; justify-content: center; color: var(--color-text, #F3F4F6); transition: color 180ms ease; } .ds-social-link svg { width: 32px; height: 32px; fill: currentColor; } .ds-social-link:hover { color: var(--color-secondary, #06B6D4); } .ds-social-link:focus-visible { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; border-radius: 8px; }"
+      "description": "An unboxed line icon and label for professional profiles and email.",
+      "html": "<a class=\"ds-social-link\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 4h16v16H4zM4 7l8 6 8-6\" /></svg><span>Email</span></a>",
+      "css": ".ds-social-link { display: inline-flex; min-height: 44px; align-items: center; gap: .55rem; color: var(--muted, #9aa4a9); text-decoration: none; transition: color 180ms ease; } .ds-social-link svg { width: 1.15rem; height: 1.15rem; fill: none; stroke: currentColor; stroke-width: 1.5; } .ds-social-link:hover, .ds-social-link:focus-visible { color: var(--text, #edf1f4); } .ds-social-link:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Experience Row",
+      "kind": "custom",
+      "refersTo": "experience-row",
+      "description": "A factual role with a thin teal icon and short supporting line.",
+      "html": "<article class=\"ds-experience-row\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><polyline points=\"16 18 22 12 16 6\"></polyline><polyline points=\"8 6 2 12 8 18\"></polyline></svg><div><h3>Lead software developer intern</h3><p>Architecture, implementation, and coordination.</p></div></article>",
+      "css": ".ds-experience-row { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: 1.1rem; padding: .75rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-experience-row:hover { background: var(--wash, rgba(127,195,191,.075)); } .ds-experience-row > svg { width: 1.45rem; height: 1.45rem; margin-top: .18rem; fill: none; stroke: var(--accent, #9fd3d4); stroke-width: 1.5; } .ds-experience-row h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-experience-row p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); font-size: .9rem; line-height: 1.5; }"
+    },
+    {
+      "name": "Work Row",
+      "kind": "card",
+      "refersTo": "work-row",
+      "description": "A square-edged project record with raster evidence, summary, technology line, and links.",
+      "html": "<article class=\"ds-work-row\"><svg class=\"ds-work-media\" viewBox=\"0 0 160 90\" role=\"img\" aria-label=\"Project thumbnail\"><rect width=\"160\" height=\"90\" fill=\"#121c2a\"/><path d=\"M20 64 47 45 74 54 105 25 140 34\" fill=\"none\" stroke=\"#7fc3bf\" stroke-width=\"2\"/></svg><div class=\"ds-work-copy\"><h3>Traveling Salesman benchmarks</h3><p>A C++ framework comparing exact and heuristic approaches.</p><span>C++ · Genetic algorithms</span></div><a href=\"#\">Report</a></article>",
+      "css": ".ds-work-row { display: grid; grid-template-columns: 10rem minmax(15rem, 1fr) auto; gap: 1.25rem; align-items: center; padding: 1.35rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-work-row:hover, .ds-work-row:focus-within { background: var(--wash, rgba(127,195,191,.075)); } .ds-work-media { width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line, #2f3946); } .ds-work-copy h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-work-copy p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); } .ds-work-copy span { display: block; margin-top: .6rem; color: var(--accent-strong, #7fc3bf); font-size: .82rem; } .ds-work-row > a { display: inline-flex; min-height: 44px; align-items: center; color: var(--accent, #9fd3d4); font-size: .9rem; } .ds-work-row > a:hover { color: var(--text, #edf1f4); } .ds-work-row > a:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
+    },
+    {
+      "name": "Report Table",
+      "kind": "custom",
+      "description": "A flat benchmark table with tabular numerals and horizontal overflow support.",
+      "html": "<div class=\"ds-table-wrap\"><table class=\"ds-table\"><caption>Runtime by number of cities</caption><thead><tr><th>Cities</th><th>Genetic algorithm</th><th>Brute force</th></tr></thead><tbody><tr><td>10</td><td>1413 ms</td><td>449 ms</td></tr><tr><td>20</td><td>6057 ms</td><td>Estimated 700+ years</td></tr></tbody></table></div>",
+      "css": ".ds-table-wrap { overflow-x: auto; border-top: 1px solid var(--line, #2f3946); } .ds-table { width: 100%; min-width: 32rem; border-collapse: collapse; color: var(--muted, #9aa4a9); font-variant-numeric: tabular-nums; } .ds-table caption { padding: .85rem 0; color: var(--muted, #9aa4a9); text-align: left; } .ds-table th, .ds-table td { padding: .8rem .9rem .8rem 0; border-bottom: 1px solid var(--line, #2f3946); text-align: left; } .ds-table th { color: var(--text, #edf1f4); font-weight: 600; }"
     }
   ],
   "narrative": {
-    "northStar": "The Night Shift Workbench",
-    "overview": "The incumbent system resembles a focused workspace after hours: dark navy surfaces, cool blue instruments, and only the controls needed to inspect the work. It should feel quiet and confident. Trust comes from clear evidence and restrained presentation, not decoration.\n\nThe palette, compact structure, and interaction model form the useful core of the current identity. Typography is provisional because the current serif mix came from browser defaults rather than a deliberate choice.",
+    "northStar": "The Canon Portfolio",
+    "overview": "The system presents Colton as a record of current work and roles, not a campaign. A slate profile field fixes identity and navigation beside a deep navy reading field on desktop. Mobile restores one continuous document. Factual copy, square raster evidence, and hairline separators carry the hierarchy without a logo, slogan, or card grid.\n\nColor and state changes stay quiet. Teal marks links, metadata, icons, and current navigation. Rows receive a faint teal wash on hover or focus. The result is dark, confident, and structural without turning the portfolio into a themed interface.",
     "keyCharacteristics": [
-      "Near-black navy canvas with one blue signal color and a cyan hover accent.",
-      "Compact cards and controls that keep project evidence close together.",
-      "Subtle structural depth tied to surfaces and interaction states.",
-      "Direct presentation with little ornamental content."
+      "Two flat navy fields form the desktop split.",
+      "A system sans type ramp keeps biography, work, and technical reporting in one voice.",
+      "Hairline dividers and tonal shifts replace shadows and floating containers.",
+      "Teal appears as a state signal, not decoration.",
+      "Square raster media provides direct project evidence."
     ],
     "rules": [
-      {"name": "The Signal Earns Attention Rule", "body": "Reserve blue and cyan for identity, navigation, and actions. The dark neutral field should remain dominant.", "section": "colors"},
-      {"name": "The No Accidental Fonts Rule", "body": "Future typography must define both display and body roles explicitly before it becomes part of the design system.", "section": "typography"},
-      {"name": "The Structural Shadow Rule", "body": "Use elevation to explain layers or interaction. Do not add shadows to decorate empty space.", "section": "elevation"}
+      { "name": "The Signal State Rule", "body": "Use teal for identity, links, metadata, icons, and interactive state. Keep the navy fields dominant and do not introduce a competing accent.", "section": "colors" },
+      { "name": "The One Sans System Rule", "body": "Let every route inherit the root system stack. Create hierarchy with size, weight, spacing, and color instead of adding another typeface.", "section": "typography" },
+      { "name": "The Two-Field Rule", "body": "Use one flat field for durable identity and one for the changing record. On narrow screens, keep their order and let both fields return to normal document flow.", "section": "layout" },
+      { "name": "The Flat Record Rule", "body": "Separate content with field color, hairlines, and spacing. Do not use gradients, shadows, or lifted cards.", "section": "elevation" },
+      { "name": "The Square Evidence Rule", "body": "Keep project rasters rectangular and unsoftened. Their border and crop are enough.", "section": "shapes" }
     ],
     "dos": [
-      "Do keep the dark neutral field dominant and reserve accent color for meaningful signals.",
-      "Do use structural depth to distinguish surfaces and confirm interaction.",
-      "Do keep project evidence scannable through compact cards, short labels, and predictable actions."
+      "Do keep the profile and record as flat, adjacent fields on desktop.",
+      "Do use hairlines, spacing, and a faint teal wash to explain hierarchy and state.",
+      "Do keep project evidence square, raster-based, and tied to factual copy.",
+      "Do use ordinary labels and direct self-representation throughout the portfolio."
     ],
     "donts": [
-      "Don't treat the current serif fonts as a permanent identity choice.",
-      "Don't add extra accent hues without revisiting the palette as a system.",
-      "Don't stack shadows, gradients, or borders when one structural cue already explains the layer."
+      "Don't add a logo, slogan, promotional hero, or generic call to action.",
+      "Don't turn experience or work rows into rounded floating cards.",
+      "Don't add shadows, gradients, neon, glass, or a themed interface.",
+      "Don't use teal as a broad fill when a line, icon, or text state is enough."
     ]
   }
 }

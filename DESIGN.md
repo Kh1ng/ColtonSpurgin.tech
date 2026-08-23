@@ -1,154 +1,235 @@
 ---
 name: Colton Spurgin Portfolio
-description: A quiet, confident portfolio built around credible technical work.
+description: A dark, direct portfolio with a split record layout and restrained teal state signals.
 colors:
-  after-hours-navy: "#0B0D12"
-  workbench-surface: "#151922"
-  workbench-blue: "#3B82F6"
-  instrument-cyan: "#06B6D4"
-  task-light: "#F3F4F6"
-  cool-steel: "#9CA3AF"
-  button-text: "#FFFFFF"
-  chip-surface: "rgba(255, 255, 255, 0.03)"
+  deep-navy: "#020d1b"
+  slate-navy: "#121c2a"
+  cool-white: "#edf1f4"
+  cool-gray: "#9aa4a9"
+  quiet-teal: "#9fd3d4"
+  signal-teal: "#7fc3bf"
+  blue-gray-line: "#2f3946"
+  teal-wash: "rgba(127, 195, 191, 0.075)"
+typography:
+  display:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "clamp(2.4rem, 6vw, 5rem)"
+    fontWeight: 650
+    lineHeight: 1.02
+    letterSpacing: "-0.035em"
+  profile-name:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "clamp(2.5rem, 3.2vw, 3.2rem)"
+    fontWeight: 650
+    lineHeight: 1.02
+    letterSpacing: "-0.035em"
+  headline:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "clamp(1.75rem, 2.6vw, 2.35rem)"
+    fontWeight: 620
+    lineHeight: 1.15
+    letterSpacing: "-0.025em"
+  report-headline:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "clamp(1.55rem, 2.4vw, 2rem)"
+    fontWeight: 620
+  report-subhead:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "1.1rem"
+    fontWeight: 600
+  title:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "1.05rem"
+    fontWeight: 600
+  body:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "1rem"
+    lineHeight: 1.65
+  profile-role:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "clamp(1.05rem, 1.45vw, 1.35rem)"
+    lineHeight: 1.5
+  intro-body:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "clamp(1.05rem, 1.35vw, 1.18rem)"
+    lineHeight: 1.65
+  email-link:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "clamp(1.1rem, 1.8vw, 1.4rem)"
+  label:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "0.9rem"
+    lineHeight: 1.5
+  technology-label:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "0.82rem"
+  footer:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "0.85rem"
 rounded:
-  image: "6px"
-  control: "8px"
-  pill: "999px"
+  square: "0"
 spacing:
-  compact: "8px"
-  standard: "16px"
-  grid: "20px"
-  section: "32px"
+  compact: "0.75rem"
+  standard: "1rem"
+  section: "clamp(2.5rem, 4vw, 3.5rem)"
+  outer: "clamp(2.75rem, 4vw, 4rem)"
 components:
-  button-primary:
-    backgroundColor: "{colors.workbench-blue}"
-    textColor: "{colors.button-text}"
-    rounded: "{rounded.control}"
-    padding: "6px 10px"
-  button-code:
+  navigation-link:
     backgroundColor: "transparent"
-    textColor: "{colors.task-light}"
-    rounded: "{rounded.control}"
-    padding: "6px 10px"
-  card-project:
-    backgroundColor: "{colors.workbench-surface}"
-    textColor: "{colors.task-light}"
-    rounded: "{rounded.control}"
-    padding: "0"
-  chip-tech:
-    backgroundColor: "{colors.chip-surface}"
-    textColor: "{colors.task-light}"
-    rounded: "{rounded.pill}"
-    padding: "4px 8px"
+    textColor: "{colors.cool-gray}"
+    typography: "{typography.body}"
+    rounded: "{rounded.square}"
+    height: "44px"
+  navigation-link-active:
+    textColor: "{colors.cool-white}"
+  experience-row:
+    backgroundColor: "transparent"
+    textColor: "{colors.cool-white}"
+    rounded: "{rounded.square}"
+    padding: "0.75rem 0"
+  experience-row-hover:
+    backgroundColor: "{colors.teal-wash}"
+  work-row:
+    backgroundColor: "transparent"
+    textColor: "{colors.cool-white}"
+    rounded: "{rounded.square}"
+    padding: "1.35rem 0"
+  work-row-hover:
+    backgroundColor: "{colors.teal-wash}"
 ---
 
 # Design System: Colton Spurgin Portfolio
 
 ## Overview
 
-**Creative North Star: "The Night Shift Workbench"**
+**Creative North Star: "The Canon Portfolio"**
 
-The incumbent system resembles a focused workspace after hours: dark navy surfaces, cool blue instruments, and only the controls needed to inspect the work. It should feel quiet and confident. Trust comes from clear evidence and restrained presentation, not decoration.
+The system presents Colton as a record of current work and roles, not a campaign. A slate profile field fixes identity and navigation beside a deep navy reading field on desktop. Mobile restores one continuous document. Factual copy, square raster evidence, and hairline separators carry the hierarchy without a logo, slogan, or card grid.
 
-The palette, compact structure, and interaction model form the useful core of the current identity. Typography is provisional because the current serif mix came from browser defaults rather than a deliberate choice.
+Color and state changes stay quiet. Teal marks links, metadata, icons, and current navigation. Rows receive a faint teal wash on hover or focus. The result is dark, confident, and structural without turning the portfolio into a themed interface.
 
 **Key Characteristics:**
 
-- Near-black navy canvas with one blue signal color and a cyan hover accent.
-- Compact cards and controls that keep project evidence close together.
-- Subtle structural depth tied to surfaces and interaction states.
-- Direct presentation with little ornamental content.
+- Two flat navy fields form the desktop split.
+- A system sans type ramp keeps biography, work, and technical reporting in one voice.
+- Hairline dividers and tonal shifts replace shadows and floating containers.
+- Teal appears as a state signal, not decoration.
+- Square raster media provides direct project evidence.
 
 ## Colors
 
-The palette uses After-Hours Navy and Workbench Surface as its base, Workbench Blue for primary emphasis, Instrument Cyan for secondary interaction feedback, and cool neutrals for readable content.
+Deep and slate navy fields hold the page. Cool white and gray separate primary facts from supporting copy, while two close teals handle identity and interaction.
 
 ### Primary
 
-- **Workbench Blue:** Marks the name, links, and primary actions.
-
-### Secondary
-
-- **Instrument Cyan:** Appears as a restrained hover signal rather than a competing accent.
+- **Quiet Teal:** Marks links, the profile role line, report metadata, and current navigation.
+- **Signal Teal:** Marks experience icons, technology lines, text selection, and stronger interaction feedback.
+- **Teal Wash:** Gives experience and work rows a low-contrast hover or focus field.
 
 ### Neutral
 
-- **After-Hours Navy:** Fills the page background.
-- **Workbench Surface:** Separates project cards from the page.
-- **Task Light:** Carries primary text and icons.
-- **Cool Steel:** Carries supporting copy and metadata.
+- **Deep Navy:** Fills the scrolling record and the long-form report.
+- **Slate Navy:** Separates the profile field from the record without elevation.
+- **Cool White:** Carries names, headings, row titles, and emphasized report text.
+- **Cool Gray:** Carries biography, descriptions, inactive navigation, captions, and footer text.
+- **Blue-Gray Line:** Draws all dividers, media borders, and the custom scrollbar.
 
 ### Named Rules
 
-**The Signal Earns Attention Rule.** Reserve blue and cyan for identity, navigation, and actions. The dark neutral field should remain dominant.
+**The Signal State Rule.** Use teal for identity, links, metadata, icons, and interactive state. Keep the navy fields dominant and do not introduce a competing accent.
 
 ## Typography
 
-The current display name uses Georgia while most body content falls back to the browser's default serif. This pairing is implementation history, not a brand commitment. A redesign may replace it with a deliberate display and body system.
+**Display Font:** System sans with native platform fallbacks
+**Body Font:** System sans with native platform fallbacks
+
+**Character:** The same sans stack carries the portfolio and technical report. Tight display spacing gives names and report titles weight. Body text stays open and readable.
+
+### Hierarchy
+
+- **Display** (650, responsive up to 5rem, 1.02 line height): Used for the Traveling Salesman report title. The profile name uses the same weight, spacing, and line height at a smaller responsive size.
+- **Headline** (620, responsive up to 2.35rem, 1.15 line height): Used for portfolio section headings. Report section headings use a slightly smaller responsive range.
+- **Title** (600, 1.05rem): Used for experience and work titles. Report table headings use the same weight.
+- **Body** (regular, 1rem base, 1.65 line height): Used for biography and long-form content. Main portfolio paragraphs rise slightly with viewport width and stop at 68 characters.
+- **Label** (regular, 0.82rem to 0.9rem, 1.5 line height): Used for technology lines, row descriptions, work links, captions, and footer text.
 
 ### Named Rules
 
-**The No Accidental Fonts Rule.** Future typography must define both display and body roles explicitly before it becomes part of the design system.
+**The One Sans System Rule.** Let every route inherit the root system stack. Create hierarchy with size, weight, spacing, and color instead of adding another typeface.
 
 ## Layout
 
-The home page centers one introduction within a full-height viewport. The project index uses a 72rem container with 32px outer padding and a 20px grid gap. It shifts from one column to two at 640px and three at 1024px. Long-form project material uses a narrower 64rem reading container.
+Desktop uses a two-field grid capped at 100rem. The profile field occupies 29% with a 20rem minimum and stays fixed to the viewport. The record fills the remaining width, while each section stops at 58rem. The left field uses responsive outer padding. The right field uses the same vertical rhythm with a wider horizontal range.
 
-Spacing is compact inside controls and cards, then expands between sections. Mobile adjustments begin at 820px and 520px. The project grid also refines card sizing at 1280px.
+The profile joins document flow at 900px. Navigation changes from a vertical rail to wrapped text links, then the record follows below it. Work rows reduce to two columns at 640px and one column at 430px. Interactive links keep a 44px minimum target on every viewport.
 
-## Elevation & Depth
-
-The system uses shadows as quiet structural separation. Cards and buttons receive a low ambient shadow at rest. Hover states increase lift only enough to confirm interactivity; depth should never become decorative or glossy.
-
-### Shadow Vocabulary
-
-- **Ambient Surface** (`0 6px 18px rgba(0, 0, 0, 0.45)`): Separates cards and controls from the navy canvas.
-- **Interactive Lift** (`0 18px 42px rgba(0, 0, 0, 0.55)`): Confirms a project card hover.
-- **Blue Response** (`0 10px 26px rgba(37, 99, 235, 0.28)`): Supports the primary action hover.
+The report uses a centered 72rem container and limits reading sections to 70 characters. Its table can scroll horizontally rather than compressing below its 32rem minimum width.
 
 ### Named Rules
 
-**The Structural Shadow Rule.** Use elevation to explain layers or interaction. Do not add shadows to decorate empty space.
+**The Two-Field Rule.** Use one flat field for durable identity and one for the changing record. On narrow screens, keep their order and let both fields return to normal document flow.
+
+## Elevation & Depth
+
+The system uses no shadows. The slate profile field, deep navy record, 1px hairlines, and low-opacity interaction wash explain structure. Nothing floats above the page.
+
+### Named Rules
+
+**The Flat Record Rule.** Separate content with field color, hairlines, and spacing. Do not use gradients, shadows, or lifted cards.
 
 ## Shapes
 
-Cards and controls use gently curved 8px corners. Project images use 6px corners where they meet card surfaces. Technology labels use a full pill radius. Borders are faint and secondary to tonal layering.
+The form language is square. Rows, links, fields, and media use no corner radius. Project media stays at a 16:9 crop with a 1px border. Line icons use thin strokes and follow the same teal state language as text links.
+
+### Named Rules
+
+**The Square Evidence Rule.** Keep project rasters rectangular and unsoftened. Their border and crop are enough.
 
 ## Components
 
-### Buttons
+### Navigation
 
-- **Shape:** Compact controls with gently curved corners (8px).
-- **Primary:** Workbench Blue with light text and a darker vertical gradient.
-- **Hover / Focus:** Small upward movement and a restrained blue shadow. Future revisions must add a visible keyboard focus treatment.
-- **Code:** Transparent with a faint neutral border and light text.
-
-### Chips
-
-- **Style:** Small technology labels use a nearly transparent light surface, light text, compact padding, and a pill silhouette.
-
-### Cards / Containers
-
-- **Corner Style:** Gently curved corners (8px) with clipped media.
-- **Background:** Workbench Surface over After-Hours Navy.
-- **Shadow Strategy:** Ambient at rest and slightly stronger on hover.
-- **Border:** A faint white border separates adjacent dark values.
-- **Internal Padding:** The card shell is flush; its body uses 16px.
+- **Section links:** Vertical on desktop and inline below 900px. Each link has a 44px minimum height.
+- **State:** Inactive links use Cool Gray. Hover, focus, and current-section states move to Cool White. The desktop hairline grows from 1.5rem to 2.4rem and turns Quiet Teal.
+- **Focus:** Every link receives a 2px Quiet Teal outline with a 4px offset.
 
 ### Social Links
 
-Social links use large light icons without containers. Their color changes to Instrument Cyan on hover through the global link treatment.
+- **Style:** Small line icons sit beside plain labels without boxes or background fills.
+- **State:** Links change from Cool Gray to Cool White on hover and focus.
+- **Layout:** The group wraps when needed and sits at the bottom of the sticky profile on desktop.
+
+### Experience Rows
+
+- **Structure:** A thin teal icon precedes a factual title and short description.
+- **Border:** Each row sits between 1px Blue-Gray hairlines.
+- **State:** Hover adds the Teal Wash without movement or elevation.
+
+### Work Rows
+
+- **Structure:** A 16:9 raster, project summary, technology line, and honest link state share one row.
+- **Border:** Square media and the row edge use 1px Blue-Gray lines.
+- **State:** Hover and focus within add the Teal Wash. Links remain plain teal text with small external-link icons.
+- **Responsive:** The row moves from three columns to two at 640px, then to one at 430px.
+
+### Report Tables
+
+- **Style:** Tables collapse borders and use tabular numerals. Headers use Cool White and body cells use Cool Gray.
+- **Structure:** A 1px line separates every row. Captions align left and retain the body reading rhythm.
+- **Overflow:** The wrapper scrolls horizontally when the viewport cannot hold the 32rem table width.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** keep the dark neutral field dominant and reserve accent color for meaningful signals.
-- **Do** use structural depth to distinguish surfaces and confirm interaction.
-- **Do** keep project evidence scannable through compact cards, short labels, and predictable actions.
+- **Do** keep the profile and record as flat, adjacent fields on desktop.
+- **Do** use hairlines, spacing, and a faint teal wash to explain hierarchy and state.
+- **Do** keep project evidence square, raster-based, and tied to factual copy.
+- **Do** use ordinary labels and direct self-representation throughout the portfolio.
 
 ### Don't:
 
-- **Don't** treat the current serif fonts as a permanent identity choice.
-- **Don't** add extra accent hues without revisiting the palette as a system.
-- **Don't** stack shadows, gradients, or borders when one structural cue already explains the layer.
+- **Don't** add a logo, slogan, promotional hero, or generic call to action.
+- **Don't** turn experience or work rows into rounded floating cards.
+- **Don't** add shadows, gradients, neon, glass, or a themed interface.
+- **Don't** use teal as a broad fill when a line, icon, or text state is enough.

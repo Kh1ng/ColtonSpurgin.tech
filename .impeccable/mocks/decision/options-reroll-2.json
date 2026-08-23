@@ -1,0 +1,51 @@
+{
+  "title": "Choose the quiet direction",
+  "question": "No pitch, no theme, no oversized slogan. Which structure feels most naturally like you?",
+  "options": [
+    {
+      "id": "quiet-record",
+      "label": "Quiet Record",
+      "lineage": "personal records, plain chronology, and restrained editorial systems",
+      "thesis": "A short introduction and a factual record do the work without announcing a brand concept.",
+      "palette": ["#0d0f10", "#d7d5cf", "#777d80", "#8096a8"],
+      "materials": ["matte screen", "hairline rules", "small status marks"],
+      "viewport": "A fixed, human introduction sits beside one continuous chronology of current roles and selected work.",
+      "risk": "It relies on strong writing and spacing; weak copy has nowhere to hide.",
+      "comp": ".impeccable/mocks/decision/reroll2-quiet-record.webp"
+    },
+    {
+      "id": "margin-notes",
+      "label": "Margin Notes",
+      "lineage": "working notebooks, marginalia, and quiet technical writing",
+      "thesis": "The main column speaks plainly while dates, tools, and context live as small notes at the edge.",
+      "palette": ["#101112", "#e2dfd7", "#8c8a84", "#9b765d"],
+      "materials": ["soft black paper", "graphite notes", "warm rule marks"],
+      "viewport": "One readable column carries the biography; a narrow margin indexes roles and projects without cards.",
+      "risk": "The notebook character can feel overly literary if annotations become decorative.",
+      "comp": ".impeccable/mocks/decision/reroll2-margin-notes.webp"
+    },
+    {
+      "id": "work-index",
+      "label": "Work Index",
+      "lineage": "studio indexes, changelogs, and well-kept project directories",
+      "thesis": "A compact index lets the work lead, with personal context revealed in the same measured system.",
+      "palette": ["#0a0b0c", "#ecebe7", "#73777a", "#6d8174"],
+      "materials": ["flat black ground", "tabular type", "quiet hover wash"],
+      "viewport": "A modest biography leads directly into a dense list of projects, roles, dates, and links.",
+      "risk": "It may feel too impersonal if the opening paragraph is shortened further.",
+      "comp": ".impeccable/mocks/decision/reroll2-work-index.webp"
+    }
+  ],
+  "buildPath": {"value": "comp", "toggle": true},
+  "canon": true,
+  "canonCard": {
+    "label": "Contemporary developer portfolio",
+    "thesis": "Direct biography, sticky context, an experience list, and quiet interaction at the craft level of strong current personal sites.",
+    "palette": ["#0b1220", "#d5dde8", "#8996a8", "#64a8a0"],
+    "materials": ["clean dark field", "soft hover states", "project screenshots"],
+    "viewport": "A left introduction remains visible while experience and work scroll on the right.",
+    "risk": "Highly usable, but familiar enough to resemble many developer portfolios.",
+    "comp": ".impeccable/mocks/decision/reroll2-canon.webp"
+  },
+  "steer": true
+}
