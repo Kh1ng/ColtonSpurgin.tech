@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-23T14:33:19Z",
+  "title": "Design System: Colton Spurgin Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "after-hours-navy": {
+        "role": "neutral",
+        "displayName": "After-Hours Navy",
+        "canonical": "#0B0D12",
+        "tonalRamp": ["oklch(15% 0.015 260)", "oklch(25% 0.014 260)", "oklch(35% 0.013 260)", "oklch(47% 0.012 260)", "oklch(60% 0.01 260)", "oklch(72% 0.008 260)", "oklch(84% 0.006 260)", "oklch(95% 0.003 260)"]
+      },
+      "workbench-surface": {
+        "role": "neutral",
+        "displayName": "Workbench Surface",
+        "canonical": "#151922",
+        "tonalRamp": ["oklch(15% 0.018 260)", "oklch(25% 0.017 260)", "oklch(35% 0.016 260)", "oklch(47% 0.014 260)", "oklch(60% 0.012 260)", "oklch(72% 0.01 260)", "oklch(84% 0.007 260)", "oklch(95% 0.003 260)"]
+      },
+      "workbench-blue": {
+        "role": "primary",
+        "displayName": "Workbench Blue",
+        "canonical": "#3B82F6",
+        "tonalRamp": ["oklch(15% 0.05 255)", "oklch(25% 0.09 255)", "oklch(35% 0.13 255)", "oklch(47% 0.18 255)", "oklch(60% 0.2 255)", "oklch(72% 0.15 255)", "oklch(84% 0.09 255)", "oklch(95% 0.03 255)"]
+      },
+      "instrument-cyan": {
+        "role": "secondary",
+        "displayName": "Instrument Cyan",
+        "canonical": "#06B6D4",
+        "tonalRamp": ["oklch(15% 0.04 210)", "oklch(25% 0.07 210)", "oklch(35% 0.1 210)", "oklch(47% 0.13 210)", "oklch(60% 0.14 210)", "oklch(72% 0.12 210)", "oklch(84% 0.08 210)", "oklch(95% 0.025 210)"]
+      },
+      "task-light": {
+        "role": "neutral",
+        "displayName": "Task Light",
+        "canonical": "#F3F4F6",
+        "tonalRamp": ["oklch(15% 0.006 260)", "oklch(25% 0.006 260)", "oklch(35% 0.006 260)", "oklch(47% 0.005 260)", "oklch(60% 0.005 260)", "oklch(72% 0.004 260)", "oklch(84% 0.003 260)", "oklch(95% 0.002 260)"]
+      },
+      "cool-steel": {
+        "role": "neutral",
+        "displayName": "Cool Steel",
+        "canonical": "#9CA3AF",
+        "tonalRamp": ["oklch(15% 0.01 260)", "oklch(25% 0.012 260)", "oklch(35% 0.014 260)", "oklch(47% 0.016 260)", "oklch(60% 0.018 260)", "oklch(72% 0.016 260)", "oklch(84% 0.011 260)", "oklch(95% 0.004 260)"]
+      }
+    },
+    "shadows": [
+      {"name": "ambient-surface", "value": "0 6px 18px rgba(0, 0, 0, 0.45)", "purpose": "Separate cards and controls from the dark canvas."},
+      {"name": "interactive-lift", "value": "0 18px 42px rgba(0, 0, 0, 0.55)", "purpose": "Confirm a project card hover."},
+      {"name": "blue-response", "value": "0 10px 26px rgba(37, 99, 235, 0.28)", "purpose": "Confirm a primary action hover."}
+    ],
+    "motion": [
+      {"name": "interaction", "value": "180ms ease", "purpose": "Move and elevate interactive elements without calling attention to the animation."}
+    ],
+    "breakpoints": [
+      {"name": "phone", "value": "520px"},
+      {"name": "grid-two-column", "value": "640px"},
+      {"name": "compact", "value": "820px"},
+      {"name": "grid-three-column", "value": "1024px"},
+      {"name": "wide", "value": "1280px"}
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action for moving from an introduction to project evidence.",
+      "html": "<button class=\"ds-btn-primary\">VIEW PROJECTS</button>",
+      "css": ".ds-btn-primary { background: linear-gradient(180deg, var(--color-primary, #3B82F6), #266bb8); color: #fff; padding: 10px 17px; border: 0; border-radius: 8px; font: 600 14px Arial, sans-serif; box-shadow: 0 6px 18px rgba(0,0,0,.45); transition: transform 180ms ease, box-shadow 180ms ease; } .ds-btn-primary:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(37,99,235,.28); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Code Button",
+      "kind": "button",
+      "refersTo": "button-code",
+      "description": "A quiet secondary action for opening source code.",
+      "html": "<a class=\"ds-btn-code\" href=\"#\">CODE</a>",
+      "css": ".ds-btn-code { display: inline-block; color: var(--color-text, #F3F4F6); padding: 6px 10px; border: 1px solid rgba(255,255,255,.06); border-radius: 8px; text-decoration: none; font-weight: 600; transition: border-color 180ms ease, color 180ms ease; } .ds-btn-code:hover { color: var(--color-secondary, #06B6D4); border-color: rgba(6,182,212,.35); } .ds-btn-code:focus-visible { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; }"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "card-project",
+      "description": "A compact project summary with evidence, technology labels, and actions.",
+      "html": "<article class=\"ds-project-card\"><div class=\"ds-project-image\"></div><div class=\"ds-project-body\"><h3>Project Name</h3><p>A concise description of the problem and completed work.</p><span class=\"ds-project-chip\">React</span></div></article>",
+      "css": ".ds-project-card { width: 280px; overflow: hidden; color: var(--color-text, #F3F4F6); background: var(--color-surface, #151922); border: 1px solid rgba(255,255,255,.04); border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,.45); transition: transform 180ms ease, box-shadow 180ms ease; } .ds-project-card:hover { transform: translateY(-6px); box-shadow: 0 18px 42px rgba(0,0,0,.55); } .ds-project-card:focus-within { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; } .ds-project-image { height: 112px; background: linear-gradient(135deg, #151922, #3B82F6); } .ds-project-body { padding: 16px; } .ds-project-body h3 { margin: 0 0 8px; font-size: 18px; } .ds-project-body p { margin: 0 0 12px; color: var(--color-text-muted, #9CA3AF); line-height: 1.45; } .ds-project-chip { display: inline-block; padding: 4px 8px; border-radius: 999px; background: rgba(255,255,255,.03); font-size: 12px; }"
+    },
+    {
+      "name": "Technology Chip",
+      "kind": "chip",
+      "refersTo": "chip-tech",
+      "description": "A compact label for technology used in a project.",
+      "html": "<span class=\"ds-tech-chip\">TypeScript</span>",
+      "css": ".ds-tech-chip { display: inline-block; color: var(--color-text, #F3F4F6); background: rgba(255,255,255,.03); padding: 4px 8px; border-radius: 999px; font-size: 12px; }"
+    },
+    {
+      "name": "Social Link",
+      "kind": "nav",
+      "description": "An unboxed icon link for contact and professional profiles.",
+      "html": "<a class=\"ds-social-link\" href=\"#\" aria-label=\"Email\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 5h18v14H3V5Zm2 2v.5l7 5 7-5V7H5Zm14 10V9.9l-7 5-7-5V17h14Z\"/></svg></a>",
+      "css": ".ds-social-link { display: inline-flex; width: 42px; height: 42px; align-items: center; justify-content: center; color: var(--color-text, #F3F4F6); transition: color 180ms ease; } .ds-social-link svg { width: 32px; height: 32px; fill: currentColor; } .ds-social-link:hover { color: var(--color-secondary, #06B6D4); } .ds-social-link:focus-visible { outline: 2px solid var(--color-secondary, #06B6D4); outline-offset: 3px; border-radius: 8px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Shift Workbench",
+    "overview": "The incumbent system resembles a focused workspace after hours: dark navy surfaces, cool blue instruments, and only the controls needed to inspect the work. It should feel quiet and confident. Trust comes from clear evidence and restrained presentation, not decoration.\n\nThe palette, compact structure, and interaction model form the useful core of the current identity. Typography is provisional because the current serif mix came from browser defaults rather than a deliberate choice.",
+    "keyCharacteristics": [
+      "Near-black navy canvas with one blue signal color and a cyan hover accent.",
+      "Compact cards and controls that keep project evidence close together.",
+      "Subtle structural depth tied to surfaces and interaction states.",
+      "Direct presentation with little ornamental content."
+    ],
+    "rules": [
+      {"name": "The Signal Earns Attention Rule", "body": "Reserve blue and cyan for identity, navigation, and actions. The dark neutral field should remain dominant.", "section": "colors"},
+      {"name": "The No Accidental Fonts Rule", "body": "Future typography must define both display and body roles explicitly before it becomes part of the design system.", "section": "typography"},
+      {"name": "The Structural Shadow Rule", "body": "Use elevation to explain layers or interaction. Do not add shadows to decorate empty space.", "section": "elevation"}
+    ],
+    "dos": [
+      "Do keep the dark neutral field dominant and reserve accent color for meaningful signals.",
+      "Do use structural depth to distinguish surfaces and confirm interaction.",
+      "Do keep project evidence scannable through compact cards, short labels, and predictable actions."
+    ],
+    "donts": [
+      "Don't treat the current serif fonts as a permanent identity choice.",
+      "Don't add extra accent hues without revisiting the palette as a system.",
+      "Don't stack shadows, gradients, or borders when one structural cue already explains the layer."
+    ]
+  }
+}
