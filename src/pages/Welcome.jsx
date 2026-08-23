@@ -1,62 +1,49 @@
 import {
+  FiActivity,
   FiBookOpen,
   FiCode,
   FiExternalLink,
   FiGithub,
   FiLinkedin,
   FiMail,
-  FiShield,
 } from 'react-icons/fi'
 import { useEffect, useState } from 'react'
-import bork from '../assets/portfolio/bork.webp'
-import homeLab from '../assets/portfolio/home-lab.webp'
-import tsp from '../assets/portfolio/tsp.webp'
-import vellm from '../assets/portfolio/vellm.webp'
 
 const experience = [
   {
     title: 'Lead software developer intern',
-    description: 'I lead development on a substantial internship project, including architecture, implementation, and coordination.',
+    description: 'I lead development of C# and Blazor middleware that connects Moodle to Azure infrastructure. I also contributed to DevSecOps automation that applies STIG controls across Ubuntu and Red Hat Enterprise Linux.',
     Icon: FiCode,
   },
   {
-    title: 'Air Force NCO',
-    description: 'I serve as a noncommissioned officer in the U.S. Air Force.',
-    Icon: FiShield,
+    title: 'Air Force veteran',
+    description: 'I served nine years as a medic in emergency departments, ambulance services, and intensive care, then as the noncommissioned officer in charge of a clinic. I learned to work in high-stress teams and eventually lead them.',
+    Icon: FiActivity,
   },
   {
-    title: 'Research assistant',
-    description: 'I support university research that applies AI near computational biology. Details stay limited while the work is underway.',
+    title: 'UWF student and research assistant',
+    description: 'I graduate in December 2026 with a B.S. in Computer Science and a specialization in artificial intelligence. My research applies AI to microscopy and spatial transcriptomics.',
     Icon: FiBookOpen,
   },
 ]
 
 const projects = [
   {
-    title: 'Bork',
-    description: 'A dog-themed social app built with TypeScript and Next.js. I migrated its database and authentication as free tiers changed.',
-    tech: 'TypeScript · Next.js · Prisma',
-    image: bork,
-    alt: 'Bork dog mark',
-    links: [
-      { label: 'Live', href: 'https://bork.coltonspurgin.tech' },
-      { label: 'Source', href: 'https://github.com/Kh1ng/bork' },
-    ],
+    title: 'Git Agent Harness',
+    description: 'A Rust CLI and control plane for running coding agents against real repositories. It manages isolated worktrees, validation, provider workflows, session logs, and cleanup.',
+    tech: 'Rust · TypeScript · React · SQLite',
+    links: [{ label: 'Source', href: 'https://github.com/Kh1ng/git-agent-harness' }],
   },
   {
-    title: 'VeLLM',
-    description: 'A work-in-progress desktop client for running self-hosted Ollama models.',
-    tech: 'Tauri · React · Rust',
-    image: vellm,
-    alt: 'VeLLM client interface',
-    links: [{ label: 'Source', href: 'https://github.com/Kh1ng/llm-chat' }],
+    title: 'trainerd',
+    description: 'A Python HTTP daemon for trusted, queued jobs. It owns repository checkouts, worktrees, logs, artifacts, and CPU/GPU capacity while keeping commands and paths server-controlled.',
+    tech: 'Python · FastAPI · SQLite',
+    links: [{ label: 'Source', href: 'https://github.com/Kh1ng/trainerd' }],
   },
   {
     title: 'Traveling Salesman benchmarks',
-    description: 'A C++ framework comparing exact and heuristic approaches for performance, scale, and solution quality.',
+    description: 'A C++ testbed for comparing brute force and genetic algorithms as the number of cities grows.',
     tech: 'C++ · Genetic algorithms',
-    image: tsp,
-    alt: 'Traveling Salesman benchmark chart',
     links: [
       { label: 'Report', href: '#/travelingsalesman', internal: true },
       { label: 'Source', href: 'https://github.com/Kh1ng/TSP' },
@@ -64,10 +51,8 @@ const projects = [
   },
   {
     title: 'Home lab',
-    description: 'Ansible automation for services running across Proxmox, Docker, and Linux.',
+    description: 'Ansible roles and playbooks for repeatable service deployment across Proxmox, Docker, and Linux.',
     tech: 'Ansible · Proxmox · Docker',
-    image: homeLab,
-    alt: 'Home lab network diagram',
     links: [],
   },
 ]
@@ -78,18 +63,23 @@ const socialLinks = [
   { label: 'Email', href: 'mailto:colton@coltonspurgin.tech', Icon: FiMail },
 ]
 
-const sections = ['about', 'experience', 'work', 'contact']
+const sections = [
+  { id: 'interests', label: 'Interests' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'work', label: 'Work' },
+  { id: 'contact', label: 'Contact' },
+]
 
 function Welcome() {
-  const [activeSection, setActiveSection] = useState('about')
+  const [activeSection, setActiveSection] = useState('interests')
 
   useEffect(() => {
     const updateActiveSection = () => {
       const current = [...sections]
         .reverse()
-        .find((id) => document.getElementById(id).getBoundingClientRect().top <= window.innerHeight * 0.25)
+        .find(({ id }) => document.getElementById(id).getBoundingClientRect().top <= Math.min(window.innerHeight * 0.25, 200))
 
-      setActiveSection(current || 'about')
+      setActiveSection(current?.id || 'interests')
     }
 
     updateActiveSection()
@@ -99,25 +89,25 @@ function Welcome() {
 
   return (
     <>
-      <a className="skip-link" href="#about">Skip to content</a>
+      <a className="skip-link" href="#interests">Skip to content</a>
       <main className="portfolio-shell">
         <aside className="profile" aria-labelledby="profile-name">
           <div>
             <h1 id="profile-name">Colton Spurgin</h1>
-            <p className="profile-roles">Software developer · Air Force NCO · Research assistant</p>
+            <p className="profile-roles">Software developer · Air Force veteran · Research assistant</p>
             <p className="profile-summary">
-              I’m a senior at UWF studying artificial intelligence. I graduate in December 2026 and plan to pursue a master’s degree.
+              I’m finishing a B.S. in Computer Science at UWF with an AI specialization. I graduate in December 2026.
             </p>
           </div>
 
           <nav className="section-nav" aria-label="Portfolio sections">
-            {sections.map((section) => (
+            {sections.map(({ id, label }) => (
               <a
-                key={section}
-                href={`#${section}`}
-                aria-current={activeSection === section ? 'location' : undefined}
+                key={id}
+                href={`#${id}`}
+                aria-current={activeSection === id ? 'location' : undefined}
               >
-                {section[0].toUpperCase() + section.slice(1)}
+                {label}
               </a>
             ))}
           </nav>
@@ -135,10 +125,13 @@ function Welcome() {
         </aside>
 
         <div className="record">
-          <section id="about" className="record-section about-section">
-            <h2>About</h2>
+          <section id="interests" className="record-section about-section">
+            <h2>Interests</h2>
             <p>
-              My background crosses software, systems, military leadership, and academic research. At UWF, I specialize in AI and assist with research near computational biology. I graduate in December 2026. After that, I want to keep building useful software and pursue a master’s degree.
+              My version of full stack is front end, backend, and AI models. I like being able to work across all three and understand how the whole system fits together.
+            </p>
+            <p>
+              After UWF, I want to pursue graduate work where artificial intelligence meets computational biology.
             </p>
           </section>
 
@@ -154,13 +147,6 @@ function Welcome() {
                   </div>
                 </article>
               ))}
-              <article className="experience-row">
-                <FiBookOpen aria-hidden="true" />
-                <div>
-                  <h3>University of West Florida</h3>
-                  <p>Senior specializing in artificial intelligence. Expected graduation: December 2026.</p>
-                </div>
-              </article>
             </div>
           </section>
 
@@ -169,7 +155,6 @@ function Welcome() {
             <div className="work-list">
               {projects.map((project) => (
                 <article className="work-row" key={project.title}>
-                  <img src={project.image} alt={project.alt} width="480" height="270" loading="lazy" />
                   <div className="work-copy">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>

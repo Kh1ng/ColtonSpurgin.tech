@@ -53,6 +53,10 @@ typography:
     fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontSize: "clamp(1.05rem, 1.35vw, 1.18rem)"
     lineHeight: 1.65
+  experience-body:
+    fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
+    fontSize: "0.96rem"
+    lineHeight: 1.6
   email-link:
     fontFamily: "ui-sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif"
     fontSize: "clamp(1.1rem, 1.8vw, 1.4rem)"
@@ -86,14 +90,14 @@ components:
     backgroundColor: "transparent"
     textColor: "{colors.cool-white}"
     rounded: "{rounded.square}"
-    padding: "0.75rem 0"
+    padding: "1rem 0"
   experience-row-hover:
     backgroundColor: "{colors.teal-wash}"
   work-row:
     backgroundColor: "transparent"
     textColor: "{colors.cool-white}"
     rounded: "{rounded.square}"
-    padding: "1.35rem 0"
+    padding: "1.6rem 0"
   work-row-hover:
     backgroundColor: "{colors.teal-wash}"
 ---
@@ -104,7 +108,7 @@ components:
 
 **Creative North Star: "The Canon Portfolio"**
 
-The system presents Colton as a record of current work and roles, not a campaign. A slate profile field fixes identity and navigation beside a deep navy reading field on desktop. Mobile restores one continuous document. Factual copy, square raster evidence, and hairline separators carry the hierarchy without a logo, slogan, or card grid.
+The system presents Colton as a record of current work and roles, not a campaign. A slate profile field fixes identity and navigation beside a deep navy reading field on desktop. Mobile restores one continuous document. Factual copy, text-first work records, and hairline separators carry the hierarchy without a logo, slogan, or card grid.
 
 Color and state changes stay quiet. Teal marks links, metadata, icons, and current navigation. Rows receive a faint teal wash on hover or focus. The result is dark, confident, and structural without turning the portfolio into a themed interface.
 
@@ -114,7 +118,7 @@ Color and state changes stay quiet. Teal marks links, metadata, icons, and curre
 - A system sans type ramp keeps biography, work, and technical reporting in one voice.
 - Hairline dividers and tonal shifts replace shadows and floating containers.
 - Teal appears as a state signal, not decoration.
-- Square raster media provides direct project evidence.
+- Text-first work records keep systems projects legible without forced thumbnails.
 
 ## Colors
 
@@ -161,7 +165,7 @@ Deep and slate navy fields hold the page. Cool white and gray separate primary f
 
 Desktop uses a two-field grid capped at 100rem. The profile field occupies 29% with a 20rem minimum and stays fixed to the viewport. The record fills the remaining width, while each section stops at 58rem. The left field uses responsive outer padding. The right field uses the same vertical rhythm with a wider horizontal range.
 
-The profile joins document flow at 900px. Navigation changes from a vertical rail to wrapped text links, then the record follows below it. Work rows reduce to two columns at 640px and one column at 430px. Interactive links keep a 44px minimum target on every viewport.
+The profile joins document flow at 900px. Navigation changes from a vertical rail to wrapped text links, then the record follows below it. Work rows move from two columns to one at 640px. Interactive links keep a 44px minimum target on every viewport.
 
 The report uses a centered 72rem container and limits reading sections to 70 characters. Its table can scroll horizontally rather than compressing below its 32rem minimum width.
 
@@ -179,11 +183,11 @@ The system uses no shadows. The slate profile field, deep navy record, 1px hairl
 
 ## Shapes
 
-The form language is square. Rows, links, fields, and media use no corner radius. Project media stays at a 16:9 crop with a 1px border. Line icons use thin strokes and follow the same teal state language as text links.
+The form language is square. Rows, links, and fields use no corner radius. Line icons use thin strokes and follow the same teal state language as text links.
 
 ### Named Rules
 
-**The Square Evidence Rule.** Keep project rasters rectangular and unsoftened. Their border and crop are enough.
+**The Plain Evidence Rule.** Present systems work through precise descriptions, technology labels, and direct links. Add imagery only when the project has a useful visual artifact.
 
 ## Components
 
@@ -207,10 +211,10 @@ The form language is square. Rows, links, fields, and media use no corner radius
 
 ### Work Rows
 
-- **Structure:** A 16:9 raster, project summary, technology line, and honest link state share one row.
-- **Border:** Square media and the row edge use 1px Blue-Gray lines.
+- **Structure:** A project summary, technology line, and honest link state share one text-first row.
+- **Border:** Each row ends with a 1px Blue-Gray line.
 - **State:** Hover and focus within add the Teal Wash. Links remain plain teal text with small external-link icons.
-- **Responsive:** The row moves from three columns to two at 640px, then to one at 430px.
+- **Responsive:** The row moves from two columns to one at 640px.
 
 ### Report Tables
 
@@ -224,7 +228,7 @@ The form language is square. Rows, links, fields, and media use no corner radius
 
 - **Do** keep the profile and record as flat, adjacent fields on desktop.
 - **Do** use hairlines, spacing, and a faint teal wash to explain hierarchy and state.
-- **Do** keep project evidence square, raster-based, and tied to factual copy.
+- **Do** keep project evidence text-first and tied to source code or a useful report.
 - **Do** use ordinary labels and direct self-representation throughout the portfolio.
 
 ### Don't:
@@ -233,3 +237,4 @@ The form language is square. Rows, links, fields, and media use no corner radius
 - **Don't** turn experience or work rows into rounded floating cards.
 - **Don't** add shadows, gradients, neon, glass, or a themed interface.
 - **Don't** use teal as a broad fill when a line, icon, or text state is enough.
+- **Don't** force a thumbnail onto software that has no useful visual artifact.

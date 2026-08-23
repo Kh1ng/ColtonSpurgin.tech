@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-23T16:31:00Z",
+  "generatedAt": "2026-08-23T17:33:42Z",
   "title": "Design System: Colton Spurgin Portfolio",
   "extensions": {
     "colorMeta": {
@@ -23,6 +23,7 @@
       "body": { "displayName": "Body", "purpose": "Biography, project descriptions, and report copy." },
       "profile-role": { "displayName": "Profile Role", "purpose": "The three-role descriptor below the profile name." },
       "intro-body": { "displayName": "Introduction Body", "purpose": "Responsive biography and contact copy on the portfolio route." },
+      "experience-body": { "displayName": "Experience Body", "purpose": "Expanded role descriptions." },
       "email-link": { "displayName": "Email Link", "purpose": "The prominent direct email address in the contact section." },
       "label": { "displayName": "Label", "purpose": "Supporting row copy, work links, and captions." },
       "technology-label": { "displayName": "Technology Label", "purpose": "Compact technology lines in work rows." },
@@ -33,8 +34,7 @@
     ],
     "breakpoints": [
       { "name": "single-field", "value": "900px" },
-      { "name": "work-row-two-column", "value": "640px" },
-      { "name": "work-row-single-column", "value": "430px" }
+      { "name": "work-row-single-column", "value": "640px" }
     ]
   },
   "components": [
@@ -43,7 +43,7 @@
       "kind": "nav",
       "refersTo": "navigation-link-active",
       "description": "A 44px-tall portfolio anchor with a hairline current-section signal.",
-      "html": "<a class=\"ds-section-link\" href=\"#about\" aria-current=\"location\">About</a>",
+      "html": "<a class=\"ds-section-link\" href=\"#interests\" aria-current=\"location\">Interests</a>",
       "css": ".ds-section-link { display: inline-flex; min-height: 44px; align-items: center; color: var(--muted, #9aa4a9); text-decoration: none; transition: color 180ms ease; } .ds-section-link::before { width: 1.5rem; height: 1px; margin-right: .85rem; background: var(--line, #2f3946); content: ''; transition: background 180ms ease, width 180ms ease; } .ds-section-link:hover, .ds-section-link:focus-visible, .ds-section-link[aria-current='location'] { color: var(--text, #edf1f4); } .ds-section-link:hover::before, .ds-section-link:focus-visible::before, .ds-section-link[aria-current='location']::before { width: 2.4rem; background: var(--accent, #9fd3d4); } .ds-section-link:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
     },
     {
@@ -59,15 +59,15 @@
       "refersTo": "experience-row",
       "description": "A factual role with a thin teal icon and short supporting line.",
       "html": "<article class=\"ds-experience-row\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><polyline points=\"16 18 22 12 16 6\"></polyline><polyline points=\"8 6 2 12 8 18\"></polyline></svg><div><h3>Lead software developer intern</h3><p>Architecture, implementation, and coordination.</p></div></article>",
-      "css": ".ds-experience-row { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: 1.1rem; padding: .75rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-experience-row:hover { background: var(--wash, rgba(127,195,191,.075)); } .ds-experience-row > svg { width: 1.45rem; height: 1.45rem; margin-top: .18rem; fill: none; stroke: var(--accent, #9fd3d4); stroke-width: 1.5; } .ds-experience-row h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-experience-row p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); font-size: .9rem; line-height: 1.5; }"
+      "css": ".ds-experience-row { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: 1.1rem; padding: 1rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-experience-row:hover { background: var(--wash, rgba(127,195,191,.075)); } .ds-experience-row > svg { width: 1.45rem; height: 1.45rem; margin-top: .18rem; fill: none; stroke: var(--accent, #9fd3d4); stroke-width: 1.5; } .ds-experience-row h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-experience-row p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); font-size: .96rem; line-height: 1.6; }"
     },
     {
       "name": "Work Row",
-      "kind": "card",
+      "kind": "custom",
       "refersTo": "work-row",
-      "description": "A square-edged project record with raster evidence, summary, technology line, and links.",
-      "html": "<article class=\"ds-work-row\"><svg class=\"ds-work-media\" viewBox=\"0 0 160 90\" role=\"img\" aria-label=\"Project thumbnail\"><rect width=\"160\" height=\"90\" fill=\"#121c2a\"/><path d=\"M20 64 47 45 74 54 105 25 140 34\" fill=\"none\" stroke=\"#7fc3bf\" stroke-width=\"2\"/></svg><div class=\"ds-work-copy\"><h3>Traveling Salesman benchmarks</h3><p>A C++ framework comparing exact and heuristic approaches.</p><span>C++ · Genetic algorithms</span></div><a href=\"#\">Report</a></article>",
-      "css": ".ds-work-row { display: grid; grid-template-columns: 10rem minmax(15rem, 1fr) auto; gap: 1.25rem; align-items: center; padding: 1.35rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-work-row:hover, .ds-work-row:focus-within { background: var(--wash, rgba(127,195,191,.075)); } .ds-work-media { width: 100%; aspect-ratio: 16 / 9; border: 1px solid var(--line, #2f3946); } .ds-work-copy h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-work-copy p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); } .ds-work-copy span { display: block; margin-top: .6rem; color: var(--accent-strong, #7fc3bf); font-size: .82rem; } .ds-work-row > a { display: inline-flex; min-height: 44px; align-items: center; color: var(--accent, #9fd3d4); font-size: .9rem; } .ds-work-row > a:hover { color: var(--text, #edf1f4); } .ds-work-row > a:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
+      "description": "A text-first project record with a summary, technology line, and links.",
+      "html": "<article class=\"ds-work-row\"><div class=\"ds-work-copy\"><h3>Git Agent Harness</h3><p>A Rust CLI and control plane for running coding agents against real repositories.</p><span>Rust · TypeScript · React · SQLite</span></div><a href=\"#\">Source</a></article>",
+      "css": ".ds-work-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.25rem; align-items: center; padding: 1.6rem 0; border-bottom: 1px solid var(--line, #2f3946); color: var(--text, #edf1f4); transition: background 180ms ease; } .ds-work-row:hover, .ds-work-row:focus-within { background: var(--wash, rgba(127,195,191,.075)); } .ds-work-copy h3 { margin: 0; font-size: 1.05rem; font-weight: 600; } .ds-work-copy p { margin: .35rem 0 0; color: var(--muted, #9aa4a9); } .ds-work-copy span { display: block; margin-top: .6rem; color: var(--accent-strong, #7fc3bf); font-size: .82rem; } .ds-work-row > a { display: inline-flex; min-height: 44px; align-items: center; color: var(--accent, #9fd3d4); font-size: .9rem; } .ds-work-row > a:hover { color: var(--text, #edf1f4); } .ds-work-row > a:focus-visible { outline: 2px solid var(--accent, #9fd3d4); outline-offset: 4px; }"
     },
     {
       "name": "Report Table",
@@ -79,32 +79,33 @@
   ],
   "narrative": {
     "northStar": "The Canon Portfolio",
-    "overview": "The system presents Colton as a record of current work and roles, not a campaign. A slate profile field fixes identity and navigation beside a deep navy reading field on desktop. Mobile restores one continuous document. Factual copy, square raster evidence, and hairline separators carry the hierarchy without a logo, slogan, or card grid.\n\nColor and state changes stay quiet. Teal marks links, metadata, icons, and current navigation. Rows receive a faint teal wash on hover or focus. The result is dark, confident, and structural without turning the portfolio into a themed interface.",
+    "overview": "The system presents Colton as a record of current work and roles, not a campaign. A slate profile field fixes identity and navigation beside a deep navy reading field on desktop. Mobile restores one continuous document. Factual copy, text-first work records, and hairline separators carry the hierarchy without a logo, slogan, or card grid.\n\nColor and state changes stay quiet. Teal marks links, metadata, icons, and current navigation. Rows receive a faint teal wash on hover or focus. The result is dark, confident, and structural without turning the portfolio into a themed interface.",
     "keyCharacteristics": [
       "Two flat navy fields form the desktop split.",
       "A system sans type ramp keeps biography, work, and technical reporting in one voice.",
       "Hairline dividers and tonal shifts replace shadows and floating containers.",
       "Teal appears as a state signal, not decoration.",
-      "Square raster media provides direct project evidence."
+      "Text-first work records keep systems projects legible without forced thumbnails."
     ],
     "rules": [
       { "name": "The Signal State Rule", "body": "Use teal for identity, links, metadata, icons, and interactive state. Keep the navy fields dominant and do not introduce a competing accent.", "section": "colors" },
       { "name": "The One Sans System Rule", "body": "Let every route inherit the root system stack. Create hierarchy with size, weight, spacing, and color instead of adding another typeface.", "section": "typography" },
       { "name": "The Two-Field Rule", "body": "Use one flat field for durable identity and one for the changing record. On narrow screens, keep their order and let both fields return to normal document flow.", "section": "layout" },
       { "name": "The Flat Record Rule", "body": "Separate content with field color, hairlines, and spacing. Do not use gradients, shadows, or lifted cards.", "section": "elevation" },
-      { "name": "The Square Evidence Rule", "body": "Keep project rasters rectangular and unsoftened. Their border and crop are enough.", "section": "shapes" }
+      { "name": "The Plain Evidence Rule", "body": "Present systems work through precise descriptions, technology labels, and direct links. Add imagery only when the project has a useful visual artifact.", "section": "shapes" }
     ],
     "dos": [
       "Do keep the profile and record as flat, adjacent fields on desktop.",
       "Do use hairlines, spacing, and a faint teal wash to explain hierarchy and state.",
-      "Do keep project evidence square, raster-based, and tied to factual copy.",
+      "Do keep project evidence text-first and tied to source code or a useful report.",
       "Do use ordinary labels and direct self-representation throughout the portfolio."
     ],
     "donts": [
       "Don't add a logo, slogan, promotional hero, or generic call to action.",
       "Don't turn experience or work rows into rounded floating cards.",
       "Don't add shadows, gradients, neon, glass, or a themed interface.",
-      "Don't use teal as a broad fill when a line, icon, or text state is enough."
+      "Don't use teal as a broad fill when a line, icon, or text state is enough.",
+      "Don't force a thumbnail onto software that has no useful visual artifact."
     ]
   }
 }

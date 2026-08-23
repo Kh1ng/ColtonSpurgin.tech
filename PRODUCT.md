@@ -22,7 +22,7 @@ Colton combines military leadership, software development, infrastructure and cy
 
 Visitors typically arrive from a job application, referral, GitHub profile, or LinkedIn profile. They scan the site before deciding whether to examine a project or contact Colton.
 
-Colton is a senior at the University of West Florida. He specializes in artificial intelligence and expects to graduate in December 2026. He is an Air Force noncommissioned officer, a lead software developer intern, and a university research assistant. He wants to keep building ambitious software and pursue a master's degree.
+Colton is finishing a Bachelor of Science in Computer Science at the University of West Florida with a specialization in artificial intelligence. He expects to graduate in December 2026. He is an Air Force veteran, a lead software developer intern, and a university research assistant. He wants to pursue graduate work related to AI and computational biology.
 
 ## Capabilities and Constraints
 
